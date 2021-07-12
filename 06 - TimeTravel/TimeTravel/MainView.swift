@@ -13,6 +13,7 @@ struct MainView: View {
 		(number: "31", unit: "days"),
 		(number: "15:11:18", unit: "hours:minutes:seconds")
 	]
+	
 	var body: some View {
 		ZStack {
 			LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -35,16 +36,16 @@ struct MainView: View {
 					}
 				}.padding(20)
 				Spacer()
-				VStack(spacing: 5) {
-					ForEach(fakeData, id: \.number) { day in
-						VStack {
-							Text(day.number)
-								.numberStyle()
-							Text(day.unit)
-								.unitStyle()
+					VStack(spacing: 5) {
+						ForEach(fakeData, id: \.number) { day in
+							VStack {
+								Text(day.number)
+									.numberStyle()
+								Text(day.unit)
+									.unitStyle()
+							}
 						}
 					}
-				}
 				Spacer()
 			}
 			.foregroundColor(.white)
