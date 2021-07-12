@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State private var isActive = false
     var body: some View {
-		Text("Hello!")
+		if isActive == true {
+			MainView()
+		} else {
+			WelcomeView()
+		}
     }
 }
 

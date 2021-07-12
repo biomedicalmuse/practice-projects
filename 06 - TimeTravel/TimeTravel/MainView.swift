@@ -13,8 +13,6 @@ struct MainView: View {
 		(number: "31", unit: "days"),
 		(number: "15:11:18", unit: "hours:minutes:seconds")
 	]
-	@State private var addingNewEvent = false
-	
 	var body: some View {
 		ZStack {
 			LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -30,9 +28,9 @@ struct MainView: View {
 					}
 					Spacer()
 					Button(action:  {
-						addingNewEvent.toggle()
+						
 					}) {
-						Image(systemName: "plus.circle")
+						Image(systemName: "pencil.circle.fill")
 							.font(.title)
 					}
 				}.padding(20)
@@ -50,9 +48,6 @@ struct MainView: View {
 				Spacer()
 			}
 			.foregroundColor(.white)
-		}
-		.sheet(isPresented: $addingNewEvent) {
-			Text("Add")
 		}
 	}
 }

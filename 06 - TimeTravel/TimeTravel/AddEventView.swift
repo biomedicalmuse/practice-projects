@@ -10,6 +10,7 @@ import SwiftUI
 struct AddEventView: View {
 	@State private var event = ""
 	@State private var date = Date()
+	@Environment(\.presentationMode) var presentationMode
 	 var body: some View {
 		NavigationView {
 			Form {
@@ -21,6 +22,7 @@ struct AddEventView: View {
 			.navigationBarTitle("New Event")
 			.navigationBarItems(trailing: Button("Save") {
 				// Code
+				presentationMode.wrappedValue.dismiss()
 			})
 		}
 	 }
