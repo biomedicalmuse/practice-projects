@@ -12,6 +12,8 @@
 		BC148BF6269CC8E6005F0E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC148BF5269CC8E6005F0E2F /* Assets.xcassets */; };
 		BC148BF9269CC8E6005F0E2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC148BF8269CC8E6005F0E2F /* Preview Assets.xcassets */; };
 		BC148C01269CD3C5005F0E2F /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C00269CD3C4005F0E2F /* TextExtension.swift */; };
+		BC148C03269CD560005F0E2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C02269CD560005F0E2F /* MainView.swift */; };
+		BC148C05269CD6FF005F0E2F /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C04269CD6FF005F0E2F /* AddEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BC148BF8269CC8E6005F0E2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC148BFA269CC8E6005F0E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC148C00269CD3C4005F0E2F /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		BC148C02269CD560005F0E2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BC148C04269CD6FF005F0E2F /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				BC148BF1269CC8E3005F0E2F /* TimeTravelApp.swift */,
 				BC148BF3269CC8E3005F0E2F /* ContentView.swift */,
+				BC148C04269CD6FF005F0E2F /* AddEventView.swift */,
+				BC148C02269CD560005F0E2F /* MainView.swift */,
 				BC148C00269CD3C4005F0E2F /* TextExtension.swift */,
 				BC148BF5269CC8E6005F0E2F /* Assets.xcassets */,
 				BC148BFA269CC8E6005F0E2F /* Info.plist */,
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC148C05269CD6FF005F0E2F /* AddEventView.swift in Sources */,
 				BC148BF4269CC8E3005F0E2F /* ContentView.swift in Sources */,
+				BC148C03269CD560005F0E2F /* MainView.swift in Sources */,
 				BC148C01269CD3C5005F0E2F /* TextExtension.swift in Sources */,
 				BC148BF2269CC8E3005F0E2F /* TimeTravelApp.swift in Sources */,
 			);
