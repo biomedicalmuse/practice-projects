@@ -15,6 +15,7 @@
 		BC148C03269CD560005F0E2F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C02269CD560005F0E2F /* MainView.swift */; };
 		BC148C05269CD6FF005F0E2F /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C04269CD6FF005F0E2F /* AddEventView.swift */; };
 		BC148C07269CD96B005F0E2F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C06269CD96B005F0E2F /* WelcomeView.swift */; };
+		BC148C09269CDDD1005F0E2F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC148C08269CDDD1005F0E2F /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BC148C02269CD560005F0E2F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BC148C04269CD6FF005F0E2F /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		BC148C06269CD96B005F0E2F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		BC148C08269CDDD1005F0E2F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				BC148C06269CD96B005F0E2F /* WelcomeView.swift */,
 				BC148C04269CD6FF005F0E2F /* AddEventView.swift */,
 				BC148C02269CD560005F0E2F /* MainView.swift */,
+				BC148C08269CDDD1005F0E2F /* Event.swift */,
 				BC148C00269CD3C4005F0E2F /* TextExtension.swift */,
 				BC148BF5269CC8E6005F0E2F /* Assets.xcassets */,
 				BC148BFA269CC8E6005F0E2F /* Info.plist */,
@@ -155,6 +158,7 @@
 				BC148C03269CD560005F0E2F /* MainView.swift in Sources */,
 				BC148C01269CD3C5005F0E2F /* TextExtension.swift in Sources */,
 				BC148C07269CD96B005F0E2F /* WelcomeView.swift in Sources */,
+				BC148C09269CDDD1005F0E2F /* Event.swift in Sources */,
 				BC148BF2269CC8E3005F0E2F /* TimeTravelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
