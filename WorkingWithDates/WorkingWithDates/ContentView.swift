@@ -25,6 +25,7 @@ extension Date {
 
 
 struct ContentView: View {
+	@State private var event = ""
 	@State private var date = Date()
 	
 	var timeBetweenDates: DateComponents {
@@ -34,18 +35,43 @@ struct ContentView: View {
 	}
 	
     var body: some View {
-		VStack(alignment: .leading, spacing: 5) {
-			Text("Selection:")
-				.font(.headline)
-			Text("\(date.standardFormat())")
-			Text("Years")
-			Text("\(timeBetweenDates.year!)")
-			Text("Days")
-			Text("\(timeBetweenDates.day!)")
-			Text("Hours")
-			Text("\(timeBetweenDates.hour!)")
-			DatePicker("Date", selection: $date)
-				.labelsHidden()
+		NavigationView {
+			VStack {
+				Section {
+					TextField("Event", text: $event)
+						.textFieldStyle(RoundedBorderTextFieldStyle())
+						.padding()
+					DatePicker("Date", selection: $date)
+						.labelsHidden()
+				}
+				Section {
+					Group {
+						Text("\(timeBetweenDates.year!)")
+							.font(.title)
+							.fontWeight(.bold)
+						Text("Years")
+							.textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+							.padding(.bottom)
+					}
+					Group {
+						Text("\(timeBetweenDates.day!)")
+							.font(.title)
+							.fontWeight(.bold)
+						Text("Days")
+							.textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+							.padding(.bottom)
+					}
+					Group {
+						Text("\(timeBetweenDates.hour!)")
+							.font(.title)
+							.fontWeight(.bold)
+						Text("Hours")
+							.textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
+							.padding(.bottom)
+					}
+				}
+			}
+			.navigationTitle(event.isEmpty ? "Major Life Event": event)
 		}
     }
 }
