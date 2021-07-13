@@ -15,12 +15,6 @@ extension Date {
 	  dateFormatter.timeStyle = .short
 	  return dateFormatter.string(from: self)
 	}
-	
-	var timeBetweenDates: DateComponents {
-		let calendar = Calendar.current
-		let amount = calendar.dateComponents([.day], from: self, to: Date())
-		return amount
-	}
 }
 
 
