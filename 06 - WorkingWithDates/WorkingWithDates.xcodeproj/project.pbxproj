@@ -14,6 +14,7 @@
 		BCEEFEBC26BC8290000A1C67 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */; };
 		BCEEFEBE26BC8387000A1C67 /* TimeBetweenDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */; };
 		BCEEFEC026BC8581000A1C67 /* SortedDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBF26BC8581000A1C67 /* SortedDates.swift */; };
+		BCEEFFA426C6C0FC000A1C67 /* CreatingDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFFA326C6C0FC000A1C67 /* CreatingDates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBetweenDates.swift; sourceTree = "<group>"; };
 		BCEEFEBF26BC8581000A1C67 /* SortedDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedDates.swift; sourceTree = "<group>"; };
+		BCEEFFA326C6C0FC000A1C67 /* CreatingDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingDates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */,
 				BCEEFEBF26BC8581000A1C67 /* SortedDates.swift */,
+				BCEEFFA326C6C0FC000A1C67 /* CreatingDates.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				BCEEFEBC26BC8290000A1C67 /* DateExtension.swift in Sources */,
 				BC51FBAA269E28920069C1B3 /* WorkingWithDatesApp.swift in Sources */,
 				BCEEFEC026BC8581000A1C67 /* SortedDates.swift in Sources */,
+				BCEEFFA426C6C0FC000A1C67 /* CreatingDates.swift in Sources */,
 				BCEEFEBE26BC8387000A1C67 /* TimeBetweenDates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
