@@ -1,30 +1,5 @@
 import SwiftUI
 
-/*
- NOTES
-
-What is Date?
-A struct that represents a single point in time, expressed as seconds relative to the beginning of the Third Millenium (January 1, 2001 00:00:00 UTC).
-It's used to represent dates and times, but it's independent of any time zone or calendar system. You have to use other objects to convert it to the appropriate calendar, time zone, and format.
-
-What is Calendar?
-A struct that specifies which calendar is being used for Date structs. It supports 16 different calendar systems
-Calendar provides context that makes creating and working with Dates easier. You can tell time using familiar time units instead of seconds relative to January 1, 2001 00:00:00 UTC).
-
-Calendar is also used to convert Date to DateComponents and vice versa.
-
-Date -> Calendar -> DateComponents
-DateComponents -> Calendar -> Date
-
-What is DateComponents?
-A struct that expresses time in discrete units, like year, month, day, hour, minute, and more.
-Used to represent a point in time or a duration of time.
-
-What does Date's description property do?
-
-What does Date's description(with:) method do?
-
-*/
 
 // Calculating the amount of time between now and Apple's reference date (January 1, 2001 00:00:00)
 let now = Date()
