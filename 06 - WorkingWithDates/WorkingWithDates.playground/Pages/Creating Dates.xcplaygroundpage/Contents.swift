@@ -201,9 +201,10 @@ print("Today is \(todayComponents.month!)/\(todayComponents.day!)/\(todayCompone
 /*
 Summary
 
-The Date struct is a date and time, expressed as the number of seconds before or after January 1, 2001 00:00:00 UTC.
-It is easier to create dates with DateComponents, a struct that contains the parts of a date and time, like month, year, and day. You can also use this object to figure out a date and time, e.g. the 100th day in a year or the first Friday of the month.
-The Calendar struct is used to convert a date and time to different timezones and regions. It providers context when converting between DateComponents and Date.
+Date represents a single point in time, expressed as the number of seconds before or after January 1, 2001 00:00:00 UTC. This format makes it easy to translate into any calendar or time system.
+DateComponents represents a point in time or a duration of time, expressed in units, like year, month, and day. It is the easiest way to create or find a date.
+Calendar provides a context when converting between Date and DateComponents.
+Apple supports 16 different calendar systems. You can use Calendar.current to get the user's calendar, so dates are formatted in a way that makes sense to them. 
 
 To create a date, using DateComponents:
  Calendar.current.date(from: DateComponents)!
