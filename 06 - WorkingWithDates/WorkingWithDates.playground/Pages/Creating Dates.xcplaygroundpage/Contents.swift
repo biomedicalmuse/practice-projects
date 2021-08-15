@@ -90,13 +90,127 @@ print("I was diagnosed on \(diagnosisDate.description(with: Locale(identifier: "
 
 // 4. You can also use DateComponents to find a date.
 
+// Find the first Friday of June
 let donutDay2020Components = DateComponents(
   year: 2021,
   month: 6,
-  weekday: 6, // The Gregorian Calendar starts on Sunday.
-  weekdayOrdinal: 1 // first Friday
+  weekday: 6, // Gregorian Calendar starts on Sunday
+  weekdayOrdinal: 1
 )
 
 let donutDay2021Date = Calendar.current.date(from: donutDay2020Components)!
 print("Donut Day 2021 happens on \(donutDay2021Date.description(with: Locale(identifier: "en-US"))).")
+
+// Convert Tokyo time to US EST
+var makeItSuntoryTime = DateComponents(
+	timeZone: TimeZone(identifier: "Asia/Tokyo")!,
+	year: 2021,
+	hour: 21,
+	weekday: 5, // Thursday
+	weekOfYear: 35
+)
+
+let suntoryMyTime = Calendar.current.date(from: makeItSuntoryTime)!
+print("Let's meet for a relaxing time at \(suntoryMyTime.description(with: Locale(identifier: "en-US"))).")
+
+// Find the 300th day of 2021
+var day300 = DateComponents(
+	year: 2021,
+	day: 300
+)
+
+let day300Date = Calendar.current.date(from: day300)!
+print("The 300th day of 2021 is \(day300Date.description(with: Locale(identifier: "en-US")))")
+
+// Figure out when you'll finish 10,000 hours, if you start on September 1, 2021
+var hoursOfSleep = 8
+let daysInYear = 365
+let sleepInAYear = hoursOfSleep * daysInYear
+
+let tenThousandHours = DateComponents(
+	year: 2021,
+	month: 9,
+	hour: 10000 + sleepInAYear
+)
+
+let expertLevelUnlocked = Calendar.current.date(from: tenThousandHours)!
+print("Assuming you sleep \(hoursOfSleep) per night, you'll have clocked in 10,000 hours on \(expertLevelUnlocked.description(with: Locale(identifier: "en-US")))")
+
+// Figure out how far behind you are in a 100-day challenge
+
+var start = DateComponents(
+	year: 2021,
+	month: 4,
+	hour: 10,
+	minute: 0,
+	second: 0,
+	weekdayOrdinal: 1
+)
+
+let finish = DateComponents(
+	year: 2021,
+	month: 4,
+	day: 100,
+	hour: 10,
+	minute: 0,
+	second: 0,
+	weekdayOrdinal: 1
+)
+
+let today = DateComponents(
+	year: 2021,
+	month: 8,
+	day: 15,
+	hour: 12,
+	minute: 3,
+	second: 0
+)
+
+let startDate = Calendar.current.date(from: start)!
+let finishDate = Calendar.current.date(from: finish)!
+let todaysDate = Calendar.current.date(from: today)!
+let overtime = today.month! - finish.month!
+
+print("""
+	You started your 100-day challenge on \(startDate.description(with: Locale(identifier: "en-US"))), with a planned end date of \(finishDate.description(with: Locale(identifier: "en-US"))).
+	Today is \(todaysDate.description(with: Locale(identifier: "en-US"))).
+   You are \(overtime) months behind.
+""")
+
+
+// What if you created an impossible date, like September 50th, 2021?
+
+var september50th = DateComponents(
+	year: 2021,
+	month: 9,
+	day: 50
+)
+
+let september50thDate = Calendar.current.date(from: september50th)!
+// Answer: It adds 50 days to the start of September.
+print("The 50th of September is actually \(september50thDate.description(with: Locale(identifier: "en-US"))).")
+
+
+// Extracting DateComponents from a Date
+
+let todayComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+
+print("Today is \(todayComponents.month!)/\(todayComponents.day!)/\(todayComponents.year!).")
+
+
+/*
+Summary
+
+The Date struct is a date and time, expressed as the number of seconds before or after January 1, 2001 00:00:00 UTC.
+It is easier to create dates with DateComponents, a struct that contains the parts of a date and time, like month, year, and day. You can also use this object to figure out a date and time, e.g. the 100th day in a year or the first Friday of the month.
+The Calendar struct is used to convert a date and time to different timezones and regions. It providers context when converting between DateComponents and Date.
+
+To create a date, using DateComponents:
+ Calendar.current.date(from: DateComponents)!
+
+To get the DateComponents from a date:
+ Calendar.current.dateComponents(_, from: Date())!
+
+*/
+
 
