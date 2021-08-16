@@ -3,5 +3,6 @@
     <pages>
         <page name='Creating Dates'/>
         <page name='Formatting and Parsing Dates'/>
+        <page name='Date Arithmetic'/>
     </pages>
 </playground>
