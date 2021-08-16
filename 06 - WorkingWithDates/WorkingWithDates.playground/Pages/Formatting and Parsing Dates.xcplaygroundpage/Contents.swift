@@ -23,6 +23,11 @@ There are several options for values:
 
 You can specify the language that should be used with each date, using the .locale property.
 
+You can use the dateFormat property to format dates.
+But you should stick to dateStyle and timeStyle whenever possible,
+so dates are displayed according to user settings.
+
+You can use DateFormatter's .date(from:) method to convert a string into a date. 
 
 
 */
@@ -76,6 +81,23 @@ formatter.dateStyle = .long
 formatter.timeStyle = .long
 formatter.locale = Locale(identifier: "ja")
 print("Japanese: \(formatter.string(from: swiftUIDebutDate)).")
+
+// Using dateFormat
+formatter.dateFormat = "y-MM-dd"
+print("SwiftUI debuted on \(formatter.string(from: swiftUIDebutDate)).")
+
+formatter.locale = Locale(identifier: "en")
+formatter.dateFormat = "MMMM dd, yyyy"
+print("SwiftUI debuted on \(formatter.string(from: swiftUIDebutDate)).")
+
+formatter.dateFormat = "EEEE, MMMM dd, yyyy"
+print("SwiftUI debuted on \(formatter.string(from: swiftUIDebutDate)).")
+
+
+// Converting strings into dates
+let sampleDate = formatter.date(from: "Monday, June 02, 2019")
+print("\(sampleDate!.description(with: Locale(identifier: "en-US")))")
+
 
 
 
