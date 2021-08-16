@@ -7,13 +7,15 @@ var greeting = "Hello, playground"
 //: [Next](@next)
 
 /*
- Notes
+ Summary
  
 You can compare two dates with comparison operators
 
-Date's timeIntervalSince method calculates the difference between two dates in seconds.
+.timeIntervalSince(Date)
+A Date method calculates the difference between two dates in seconds.
 
-Calendar's dateComponents([SetComponents], from: Date, to: Date) method calculates the difference between two dates in units, like years and weeks.
+dateComponents([SetComponents], from: Date, to: Date)
+A Calendar method that calculates the difference between two dates in units, like years and weeks.
 
 date(byAdding: timeInterval, value: numberOfUnits, to: startDate)
 A Calendar method that adds an amount of time to a given date and returns the result.
@@ -28,7 +30,6 @@ This is useful when you want to make rough comparisons, like the number of days 
 If you use comparison operators, Swift will compare down to the nanosecond.
  
 */
-
 let nineteenEightyNine = DateComponents(
 	year: 2014,
 	month: 10,

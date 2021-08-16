@@ -29,7 +29,6 @@ so dates are displayed according to user settings.
 
 You can use DateFormatter's .date(from:) method to convert a string into a date. 
 
-
 */
 
 // Swift was releated on June 2, 2014.
