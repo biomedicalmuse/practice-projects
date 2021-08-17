@@ -4,32 +4,6 @@ import Foundation
 
 //: [Next](@next)
 
-/*
-Summary
-
-Date, DateComponents, and Calendar handle the internal representation of date and time.
-DateFormatter is used for external representation, i.e. handling how a date is presented to users on a screen. It converts Date into String and vice versa.
-
-Note that Date's description and description(with:) methods are only meant for debugging, even though they technically do the same thing.
-
-DateFormatter must have either a .dateStyle or .timeStyle property to display a date on the screen.
-
-There are several options for values:
-.none
-.short
-.medium
-.long
-.full
-
-You can specify the language that should be used with each date, using the .locale property.
-
-You can use the dateFormat property to format dates.
-But you should stick to dateStyle and timeStyle whenever possible,
-so dates are displayed according to user settings.
-
-You can use DateFormatter's .date(from:) method to convert a string into a date. 
-
-*/
 
 // Swift was releated on June 2, 2014.
 
@@ -98,5 +72,31 @@ let sampleDate = formatter.date(from: "Monday, June 02, 2019")
 print("\(sampleDate!.description(with: Locale(identifier: "en-US")))")
 
 
+/*
+Summary
+
+Date, DateComponents, and Calendar handle the internal representation of date and time.
+DateFormatter is used for external representation, i.e. handling how a date is presented to users on a screen. It converts Date into String and vice versa.
+
+Note that Date's description and description(with:) methods are only meant for debugging, even though they technically do the same thing.
+
+DateFormatter must have either a .dateStyle or .timeStyle property to display a date on the screen.
+
+There are several options for values:
+.none
+.short
+.medium
+.long
+.full
+
+You can specify the language that should be used with each date, using the .locale property.
+
+You can use the dateFormat property to format dates.
+But you should stick to dateStyle and timeStyle whenever possible,
+so dates are displayed according to user settings.
+
+You can use DateFormatter's .date(from:) method to convert a string into a date.
+
+*/
 
 

@@ -4,5 +4,7 @@
         <page name='Creating Dates'/>
         <page name='Formatting and Parsing Dates'/>
         <page name='Date Arithmetic'/>
+        <page name='Adding Syntactic Sugar'/>
+        <page name='Practice Area'/>
     </pages>
 </playground>

@@ -2,34 +2,8 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
 //: [Next](@next)
 
-/*
- Summary
- 
-You can compare two dates with comparison operators
-
-.timeIntervalSince(Date)
-A Date method calculates the difference between two dates in seconds.
-
-dateComponents([SetComponents], from: Date, to: Date)
-A Calendar method that calculates the difference between two dates in units, like years and weeks.
-
-date(byAdding: timeInterval, value: numberOfUnits, to: startDate)
-A Calendar method that adds an amount of time to a given date and returns the result.
-You can use negative values to find dates in the past.
-
-date(byAdding: timeIntervalComponents, to: startDate)
-A Calendar method that adds (or subtracts) multiple time units from a date and returns the result.
-
-compare(firstDate, to: secondDate, toGranularity: granularity)
-A Calendar method that lets you compare Dates with different levels of precision.
-This is useful when you want to make rough comparisons, like the number of days between two dates.
-If you use comparison operators, Swift will compare down to the nanosecond.
- 
-*/
 let nineteenEightyNine = DateComponents(
 	year: 2014,
 	month: 10,
@@ -136,6 +110,28 @@ print("\(preciseTest == .orderedAscending)") // true
 let lessPreciseTest = Calendar.current.compare(firstDate, to: secondDate, toGranularity: .hour)
 print("\(lessPreciseTest == .orderedSame)") // true
 
+/*
+ Summary
+ 
+You can compare two dates with comparison operators
 
+.timeIntervalSince(Date)
+A Date method calculates the difference between two dates in seconds.
 
+dateComponents([SetComponents], from: Date, to: Date)
+A Calendar method that calculates the difference between two dates in units, like years and weeks.
+
+date(byAdding: timeInterval, value: numberOfUnits, to: startDate)
+A Calendar method that adds an amount of time to a given date and returns the result.
+You can use negative values to find dates in the past.
+
+date(byAdding: timeIntervalComponents, to: startDate)
+A Calendar method that adds (or subtracts) multiple time units from a date and returns the result.
+
+compare(firstDate, to: secondDate, toGranularity: granularity)
+A Calendar method that lets you compare Dates with different levels of precision.
+This is useful when you want to make rough comparisons, like the number of days between two dates.
+If you use comparison operators, Swift will compare down to the nanosecond.
+ 
+*/
 
