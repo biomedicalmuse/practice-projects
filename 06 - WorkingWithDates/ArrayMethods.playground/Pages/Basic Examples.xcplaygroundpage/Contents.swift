@@ -124,6 +124,8 @@ print(yearsAsStrings)
 
 // .reduce() - used to calculate the sum of an array
 
+// .compactMap() - Returns the non-nil values in an array.
+
 
 
 
