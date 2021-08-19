@@ -114,9 +114,11 @@ print(firstIndex!)
 
 /*
  Changing an array
+
+  1. map() - performs an action on each element, places it in a new array, and returns the result
+  2. reduce() - used to calculate the sum of an array
 */
 
-// .map() - performs an action on each element, places it in a new array, and returns the result
 let yearsAsStrings = years.map { String($0) }
 print(yearsAsStrings)
 
