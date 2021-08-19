@@ -7,10 +7,27 @@
 
 import SwiftUI
 
+/*
+
+Create a list that has the following functionality:
+  Add
+  Delete
+  Sort
+  Filter
+  Drag
+
+  Select
+  Group
+
+And the following attributes:
+  Sections
+*/
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+		List {
+		
+		}
     }
 }
 
