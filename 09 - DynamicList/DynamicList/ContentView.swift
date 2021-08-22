@@ -8,27 +8,37 @@
 import SwiftUI
 
 /*
+ 
+A basic to-do list application
 
-Create a list that has the following functionality:
-  Add
-  Delete
-  Sort
-  Filter
-  Drag
+Each task has ...
+- a name
+- a deadline
+- a category
+- a priority
 
-  Select
-  Group
+Users can ...
+- Add
+- Edit
+- Delete
+- Move
+- Sort (by date, category, priority)
+- Filter (by date, category, priority)
+- Select
+- Group (by category)
 
-And the following attributes:
-  Sections
+And view the list as ...
+- a plain list
+- a grouped list
+
+
 */
+
 
 struct ContentView: View {
     var body: some View {
-		List {
-		
-		}
-    }
+		Text("Hello, List!")
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
