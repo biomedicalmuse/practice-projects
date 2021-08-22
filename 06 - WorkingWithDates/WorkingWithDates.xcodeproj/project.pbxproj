@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC13E35626D2E8E6002B505B /* FilterByDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13E35526D2E8E6002B505B /* FilterByDate.swift */; };
+		BC13E35826D2ED26002B505B /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13E35726D2ED26002B505B /* Events.swift */; };
 		BC51FBAA269E28920069C1B3 /* WorkingWithDatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51FBA9269E28920069C1B3 /* WorkingWithDatesApp.swift */; };
 		BC51FBAC269E28920069C1B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51FBAB269E28920069C1B3 /* ContentView.swift */; };
 		BC51FBAE269E28950069C1B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC51FBAD269E28950069C1B3 /* Assets.xcassets */; };
@@ -14,10 +16,11 @@
 		BCEEFEBC26BC8290000A1C67 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */; };
 		BCEEFEBE26BC8387000A1C67 /* TimeBetweenDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */; };
 		BCEEFEC026BC8581000A1C67 /* SortedDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBF26BC8581000A1C67 /* SortedDates.swift */; };
-		BCEEFFA426C6C0FC000A1C67 /* CreatingDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFFA326C6C0FC000A1C67 /* CreatingDates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC13E35526D2E8E6002B505B /* FilterByDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterByDate.swift; sourceTree = "<group>"; };
+		BC13E35726D2ED26002B505B /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		BC51FBA6269E28920069C1B3 /* WorkingWithDates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingWithDates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC51FBA9269E28920069C1B3 /* WorkingWithDatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithDatesApp.swift; sourceTree = "<group>"; };
 		BC51FBAB269E28920069C1B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,7 +30,6 @@
 		BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBetweenDates.swift; sourceTree = "<group>"; };
 		BCEEFEBF26BC8581000A1C67 /* SortedDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedDates.swift; sourceTree = "<group>"; };
-		BCEEFFA326C6C0FC000A1C67 /* CreatingDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingDates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC13E35926D2EE53002B505B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC13E35726D2ED26002B505B /* Events.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC13E35A26D2EE5A002B505B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		BC51FB9D269E28920069C1B3 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +80,9 @@
 			children = (
 				BC51FBA9269E28920069C1B3 /* WorkingWithDatesApp.swift */,
 				BC51FBAB269E28920069C1B3 /* ContentView.swift */,
+				BC13E35926D2EE53002B505B /* Model */,
 				BCEEFEC126BC85CD000A1C67 /* Examples */,
-				BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */,
+				BC13E35A26D2EE5A002B505B /* Helpers */,
 				BC51FBAD269E28950069C1B3 /* Assets.xcassets */,
 				BC51FBB2269E28950069C1B3 /* Info.plist */,
 				BC51FBAF269E28950069C1B3 /* Preview Content */,
@@ -82,9 +101,9 @@
 		BCEEFEC126BC85CD000A1C67 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */,
 				BCEEFEBF26BC8581000A1C67 /* SortedDates.swift */,
-				BCEEFFA326C6C0FC000A1C67 /* CreatingDates.swift */,
+				BC13E35526D2E8E6002B505B /* FilterByDate.swift */,
+				BCEEFEBD26BC8387000A1C67 /* TimeBetweenDates.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -160,9 +179,10 @@
 			files = (
 				BC51FBAC269E28920069C1B3 /* ContentView.swift in Sources */,
 				BCEEFEBC26BC8290000A1C67 /* DateExtension.swift in Sources */,
+				BC13E35626D2E8E6002B505B /* FilterByDate.swift in Sources */,
 				BC51FBAA269E28920069C1B3 /* WorkingWithDatesApp.swift in Sources */,
+				BC13E35826D2ED26002B505B /* Events.swift in Sources */,
 				BCEEFEC026BC8581000A1C67 /* SortedDates.swift in Sources */,
-				BCEEFFA426C6C0FC000A1C67 /* CreatingDates.swift in Sources */,
 				BCEEFEBE26BC8387000A1C67 /* TimeBetweenDates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,49 +8,33 @@
 import SwiftUI
 
 struct SortedDates: View {
-	@State private var dates = [Date]()
+	@StateObject private var events = EventList.generateDates(number: 1...20)
+	@State private var sortAscending = false
+	
 	 var body: some View {
-		VStack {
-			if !dates.isEmpty {
-				HStack {
-					Button("Newest") {
-						dates.sort {
-							$0 > $1
-						}
-					}
-					Spacer()
-					Button("Oldest") {
-						dates.sort {
-							$0 < $1
-						}
-					}
+		NavigationView {
+			List {
+				ForEach(events.list) { event in
+					Text(event.date.getString())
 				}
-				.padding()
 			}
-			Spacer()
-			ScrollView(.vertical) {
-				VStack(alignment: .leading) {
-					ForEach(dates, id: \.self) {
-						Text($0.formatted(as: "MMMM d, yyyy HH:mm"))
-							.font(.body)
-							.padding(5)
-					}
+			.navigationTitle("Dates")
+			.navigationBarItems(trailing: Button(action: {
+				sortAscending.toggle()
+				if sortAscending == true {
+					events.ascendingSort()
+				} else {
+					events.descendingSort()
 				}
-				.frame(maxWidth: .infinity)
-			}
+			}) {
+				VStack {
+					Image(systemName: "arrow.up.arrow.down.square.fill")
+						.font(.largeTitle)
+					Text("Sort")
+						.font(.caption)
+				}
+			})
 		}
-		.navigationBarTitle("Timeline", displayMode: .inline)
-		.navigationBarItems(trailing: Button("Add") {
-			let year = Int.random(in: 2015...2021)
-			let month = Int.random(in: 1...12)
-			let day = Int.random(in: 1...30)
-			let hour = Int.random(in: 1...24)
-			let minute = Int.random(in: 1...59)
-		
-			let date = Date(dateString: "\(month)/\(day)/\(year) \(hour):\(minute)")
-			
-			dates.append(date)
-		})
 	 }
  }
 
