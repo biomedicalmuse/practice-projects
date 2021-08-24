@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
 		NavigationView {
 			List {
-				NavigationLink(destination: SortedDates()) {
+				NavigationLink(destination: SortDates()) {
 					Text("Sort by date")
 				}
-				NavigationLink(destination: TimeBetweenDates()) {
+				NavigationLink(destination: CalculateTimeBetweenDates()) {
 					Text("Calculate time between dates")
 				}
 			}

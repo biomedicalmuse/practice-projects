@@ -28,9 +28,9 @@ class EventList: ObservableObject {
 	}
 	
 	
-	static func generateDates(number: ClosedRange<Int>) -> EventList {
+	static func generateDates(range: ClosedRange<Int>) -> EventList {
 		let events = EventList()
-		for _ in number {
+		for _ in range {
 			let randomYear = Int.random(in: 2015...2021)
 			let randomMonth = Int.random(in: 1...12)
 			let randomDay = Int.random(in: 1...30)
@@ -44,4 +44,6 @@ class EventList: ObservableObject {
 		return events
 	}
 }
+
+
 

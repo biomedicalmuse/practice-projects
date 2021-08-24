@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct SortedDates: View {
-	@StateObject private var events = EventList.generateDates(number: 1...20)
+struct SortDates: View {
+	@StateObject private var events = EventList.generateDates(range: 1...10)
 	@State private var sortAscending = false
 	
 	 var body: some View {
@@ -40,6 +40,6 @@ struct SortedDates: View {
 
 struct SortedDates_Previews: PreviewProvider {
     static var previews: some View {
-        SortedDates()
+        SortDates()
     }
 }
