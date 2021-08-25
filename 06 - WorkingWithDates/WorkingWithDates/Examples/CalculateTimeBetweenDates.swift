@@ -33,11 +33,24 @@ struct CalculateTimeBetweenDates: View {
 	var body: some View {
 		VStack {
 			if units == date {
-				Text("\(calculateTime.day!) Days")
+				VStack {
+					Text("\(calculateTime.year!) Years")
+					Text("\(calculateTime.month!) Months")
+					Text("\(calculateTime.day!) Days")
+				}
 			} else if units == time {
-				Text("\(calculateTime.hour!) Hours")
+				VStack {
+					Text("\(calculateTime.hour!) Hours")
+					Text("\(calculateTime.minute!) Minutes")
+					Text("\(calculateTime.second!) Seconds")
+				}
 			} else {
-				Text("\(calculateTime.day!) Days and \(calculateTime.hour!) Hours")
+				Text("\(calculateTime.year!) Years")
+				Text("\(calculateTime.month!) Months")
+				Text("\(calculateTime.day!) Days")
+				Text("\(calculateTime.hour!) Hours")
+				Text("\(calculateTime.minute!) Minutes")
+				Text("\(calculateTime.second!) Seconds")
 			}
 		
 			Group {
