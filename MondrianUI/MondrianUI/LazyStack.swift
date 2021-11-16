@@ -10,23 +10,19 @@ import SwiftUI
 // This only works on iOS 14+
 
 struct LazyStack: View {
-	let squares = (1...100).map {"Item \($0)"}
 	let columns = [
-		//GridItem(.adaptive(minimum: 80))
-		GridItem(.fixed(200)),
+		GridItem(.fixed(130)),
 		GridItem(.flexible()),
-		GridItem(.flexible())
 	]
 	var body: some View {
-		ScrollView(.vertical) {
-			LazyVGrid(columns: columns, spacing: 20) {
-				ForEach(squares, id: \.self) { item in
-					Text(item)
+		GeometryReader { geometry in
+			LazyVGrid(columns: columns, spacing: 10) {
+				ForEach(0..<2) { _ in
+					Rectangle()
+						.frame(height: geometry.size.height * 0.35)
 				}
 			}
-			.padding(.horizontal)
 		}
-		.frame(maxHeight: 500)
 	 }
 }
 
