@@ -25,17 +25,19 @@ import SwiftUI
 struct StandardStack: View {
     var body: some View {
 		 GeometryReader { geometry in
-			 HStack(spacing: 10) {
-				 VStack(spacing: 10) {
+			 HStack(spacing: 8) {
+				 // Left Column
+				 VStack(spacing: 8) {
 					 Rectangle()
 						 .fill(Color.red)
 					 Rectangle()
 						 .fill(Color.white)
 				 }
-				 .frame(width: geometry.size.width * 0.35, height: geometry.size.height * 0.50)
-				 VStack(spacing: 10) {
+				 // Right Column
+				 VStack(spacing: 8) {
 					 Rectangle()
 						 .fill(Color.white)
+					 // Inner-Left Column
 					 VStack {
 						 HStack {
 							 VStack {
@@ -49,6 +51,7 @@ struct StandardStack: View {
 								 }
 								 .frame(height: geometry.size.height * 0.02)
 							 }
+							 // Inner-Right Column 
 							 VStack {
 								 Rectangle()
 									 .fill(Color.blue)
@@ -60,7 +63,7 @@ struct StandardStack: View {
 
 					 }
 				 }
-				 .frame(width: geometry.size.width * 0.50, height: geometry.size.height * 0.50)
+				 //.frame(width: geometry.size.width * 0.50, height: geometry.size.height * 0.50)
 			 }
 			 .frame(width: geometry.size.width, height: geometry.size.height)
 			 .background(Color.black)

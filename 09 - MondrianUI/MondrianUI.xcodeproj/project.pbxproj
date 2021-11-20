@@ -12,8 +12,8 @@
 		BC210CF3274425FE00F83802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC210CF2274425FE00F83802 /* Assets.xcassets */; };
 		BC210CF6274425FE00F83802 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC210CF5274425FE00F83802 /* Preview Assets.xcassets */; };
 		BC210CFD274429B900F83802 /* StandardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC210CFC274429B900F83802 /* StandardStack.swift */; };
-		BC210CFF274429C800F83802 /* LazyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC210CFE274429C800F83802 /* LazyStack.swift */; };
-		BC210D0127442B5A00F83802 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC210D0027442B5A00F83802 /* GridStack.swift */; };
+		BC6D384527497E51000EAABD /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D384427497E51000EAABD /* GridStack.swift */; };
+		BC6D384727498677000EAABD /* DynamicGridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D384627498677000EAABD /* DynamicGridStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +23,8 @@
 		BC210CF2274425FE00F83802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC210CF5274425FE00F83802 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC210CFC274429B900F83802 /* StandardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardStack.swift; sourceTree = "<group>"; };
-		BC210CFE274429C800F83802 /* LazyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStack.swift; sourceTree = "<group>"; };
-		BC210D0027442B5A00F83802 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		BC6D384427497E51000EAABD /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		BC6D384627498677000EAABD /* DynamicGridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicGridStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +59,7 @@
 			children = (
 				BC210CEE274425FC00F83802 /* MondrianUIApp.swift */,
 				BC210CF0274425FC00F83802 /* ContentView.swift */,
-				BC210CFC274429B900F83802 /* StandardStack.swift */,
-				BC210CFE274429C800F83802 /* LazyStack.swift */,
-				BC210D0027442B5A00F83802 /* GridStack.swift */,
+				BC6D384327497E2F000EAABD /* Experiments */,
 				BC210CF2274425FE00F83802 /* Assets.xcassets */,
 				BC210CF4274425FE00F83802 /* Preview Content */,
 			);
@@ -74,6 +72,16 @@
 				BC210CF5274425FE00F83802 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC6D384327497E2F000EAABD /* Experiments */ = {
+			isa = PBXGroup;
+			children = (
+				BC210CFC274429B900F83802 /* StandardStack.swift */,
+				BC6D384427497E51000EAABD /* GridStack.swift */,
+				BC6D384627498677000EAABD /* DynamicGridStack.swift */,
+			);
+			path = Experiments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC210D0127442B5A00F83802 /* GridStack.swift in Sources */,
-				BC210CFF274429C800F83802 /* LazyStack.swift in Sources */,
+				BC6D384727498677000EAABD /* DynamicGridStack.swift in Sources */,
 				BC210CF1274425FC00F83802 /* ContentView.swift in Sources */,
 				BC210CEF274425FC00F83802 /* MondrianUIApp.swift in Sources */,
+				BC6D384527497E51000EAABD /* GridStack.swift in Sources */,
 				BC210CFD274429B900F83802 /* StandardStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
