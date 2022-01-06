@@ -6,13 +6,15 @@
 
 import SwiftUI
 
+
 struct LockScreenButton: View {
-	let image: String
+	let activeImage: String
+	let inactiveImage: String
 	@State private var pressed = false
 	@State private var activated = false
 	
 	var body: some View {
-		Image(systemName: image)
+		Image(systemName: activated ? activeImage : inactiveImage)
 			.font(.title3)
 			.frame(width: 50, height: 50)
 			.background(activated ? Color.white : Color.black.opacity(pressed ? 0.8 : 0.4))
@@ -26,12 +28,14 @@ struct LockScreenButton: View {
 				let generator = UIImpactFeedbackGenerator()
 				generator.impactOccurred()
 				activated.toggle()
+				print("Tapped!")
 				pressed = false
 			}
 	}
 }
 
 struct ContentView: View {
+	@State private var activated = false
     var body: some View {
 		 ZStack {
 			 GeometryReader { geometry in
@@ -41,9 +45,12 @@ struct ContentView: View {
 					.frame(maxWidth: geometry.size.width)
 				 Color.black.opacity(0.15)
 				 VStack(spacing: 0) {
-					  Image(systemName: "lock.fill")
+					 Image(systemName: activated ? "lock.open.fill": "lock.fill")
 							.font(.headline)
 							.padding(.top, 60)
+							.onTapGesture {
+								activated.toggle()
+							}
 
 					 Text(Date(), style: .time)
 							.font(.system(size: 92, weight: .thin))
@@ -57,9 +64,9 @@ struct ContentView: View {
 					  Spacer()
 					 
 					 HStack {
-						 LockScreenButton(image: "flashlight.off.fill")
+						 LockScreenButton(activeImage: "flashlight.on.fill",  inactiveImage: "flashlight.off.fill")
 						 Spacer()
-						 LockScreenButton(image: "camera.fill")
+						 LockScreenButton(activeImage: "camera.fill", inactiveImage: "camera")
 					 }.padding(20)
 					  Capsule()
 							.fill(Color.white)
