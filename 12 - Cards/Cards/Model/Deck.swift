@@ -21,6 +21,8 @@ struct Deck {
 		Card(content: "Here's a good idea", color: Color.pink)
 	]
 	
+	var selectedCards: [Card] = []
+	
 	var count: Int {
 		return cards.count
 	}
@@ -30,14 +32,14 @@ struct Deck {
 		return cards.firstIndex(of: card) ?? 0
 	}
 	
-	/* The scale of the card depends on its position.
+	/* The scale of the card depends on its position in the array.
 	   The lower the z-index, the further back it is.
 	   The further back, the smaller and higher it is.
 	 */
 	
-	// Cards are scaled down by 2% (10 pixels) of their total size, multiplied by their position.
+	// Cards are scaled down by 2% (10 pixels) of their total size based on their position
 	// A card at index 0 will have a scale of 1 (0 x 0.02)
-	func scale(of card: Card) -> CGFloat {
+	func scale(of card: Card ) -> CGFloat {
 		 let deckPosition = position(of: card)
 		 let scale = CGFloat(deckPosition) * 0.02
 		 return CGFloat(1 - scale)
@@ -75,5 +77,26 @@ struct Deck {
 	mutating func moveToFront(_ state: Card) {
 		 let topCard = cards.remove(at: position(of: state))
 		 cards.insert(topCard, at: 0)
+	}
+	
+	// Removes the card from the deck
+	// And puts it in a new array of selected cards
+	mutating func select(_ state: Card) {
+		let selectedCard = cards.remove(at: position(of: state))
+		selectedCards.insert(selectedCard, at: 0)
+		
+	}
+	
+	// Removes the card from the list of selected cards
+	// And puts it back in the deck 
+	mutating func unselect(_ state: Card) {
+		let selectedCard = selectedCards.remove(at: position(of: state))
+		cards.insert(selectedCard, at: 0)
+	}
+}
+
+struct Previews_Deck_Previews: PreviewProvider {
+	static var previews: some View {
+		/*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
 	}
 }
