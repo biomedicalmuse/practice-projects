@@ -18,7 +18,8 @@
  3. When the user swipes a card to the left or right, it should move to the back and get smaller.
 		- offset for card position
 		- scale for card size
- 4. When the user moves a card to the top of the screen, it will be removed from the deck and placed at the top of the screen in a horizontal row.
+ 4. When the user moves a card to the top of the screen, it will be removed from the deck and placed at the top of the screen in a horizontal row (and vice versa).
+ 5.
  
  */
 
@@ -28,18 +29,17 @@ struct ContentView: View {
 	@State var deck: Deck = Deck()
     var body: some View {
 		 VStack {
-			 // Annotated Cards
 			 if !deck.selectedCards.isEmpty {
 				 ScrollView(.horizontal) {
 					 HStack {
 						 ForEach(deck.selectedCards) { selected in
 							 CardView(card: selected)
+								 .padding(0)
+								 .frame(width: 150, height: 180)
 								 .scaleEffect(
 									x: self.deck.scale(of: selected) * 0.50,
 									y: self.deck.scale(of: selected) * 0.50
 								 )
-								 .padding(0)
-								 .frame(width: 150, height: 200)
 								 .gesture (
 									DragGesture()
 										.onChanged( { (drag) in
@@ -70,22 +70,28 @@ struct ContentView: View {
 				 }
 				 Divider()
 			 }
-			 ZStack {
-				 ForEach(deck.cards) { card in
-					 CardView(card: card)
-						 .zIndex(deck.zIndex(of: card))
-						 .shadow(radius: 2)
-						 .offset(
+			 if deck.cards.isEmpty {
+				 Spacer()
+				 Text("You don't have any cards.")
+				 Spacer()
+			 }
+				Spacer()
+				ZStack {
+					ForEach(deck.cards) { card in
+						CardView(card: card)
+							.zIndex(deck.zIndex(of: card))
+							.shadow(radius: 2)
+							.offset(
 							x: self.offset(for: card).width,
 							y: self.offset(for: card).height
-						 )
-						 .offset(y: deck.deckOffset(of: card))
-						 .scaleEffect(
+							)
+							.offset(y: deck.deckOffset(of: card))
+							.scaleEffect(
 							x: self.deck.scale(of: card),
 							y: self.deck.scale(of: card)
-						 )
-						 .rotationEffect(self.rotation(of: card))
-						 .gesture(
+							)
+							.rotationEffect(self.rotation(of: card))
+							.gesture(
 							DragGesture()
 								.onChanged( { (drag) in
 									if self.deck.activeCard == nil {
@@ -96,17 +102,17 @@ struct ContentView: View {
 									withAnimation(.spring()) {
 										self.deck.topCardOffset = drag.translation
 										if
-											 drag.translation.width < -200 ||
-											 drag.translation.width > 200
+												drag.translation.width < -200 ||
+												drag.translation.width > 200
 										{
 											
-											 self.deck.moveToBack(card)
+												self.deck.moveToBack(card)
 										} else {
-											 self.deck.moveToFront(card)
+												self.deck.moveToFront(card)
 										}
 									}
 									
-									if drag.translation.height < -250 {
+									if drag.translation.height < -150 {
 											self.deck.select(card)
 									}
 								})
@@ -116,10 +122,11 @@ struct ContentView: View {
 										self.deck.topCardOffset = .zero
 									}
 								}
-						 )
-					  )
-				 }
-			 }
+							)
+						)
+					}
+				}
+			   Spacer()
 		 }
     }
 	
@@ -129,7 +136,7 @@ struct ContentView: View {
 			return .zero
 		}
 		
-		return deck.topCardOffset
+		return self.deck.topCardOffset
 	}
 	
 	// Verifies that the card being rotated is active
