@@ -29,7 +29,7 @@ struct CardView: View {
 		 .padding()
 		 .background(card.color)
 		 .clipShape(RoundedRectangle(cornerRadius: 20))
-		 .frame(width: 300, height: 330)
+		 .frame(width: 280, height: 310)
     }
 }
 

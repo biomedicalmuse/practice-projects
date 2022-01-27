@@ -14,6 +14,6 @@ struct Card: Identifiable, Equatable {
 	
 	static let example = Card(
 		content: "An app for tracking your ideas over time.",
-		color: .blue
+		color: Color.blue
 	)
 }

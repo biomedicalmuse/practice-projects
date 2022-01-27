@@ -27,6 +27,7 @@ import SwiftUI
 
 struct ContentView: View {
 	@State var deck: Deck = Deck()
+	@State var showingDeleteButton = false
     var body: some View {
 		 VStack {
 			 if !deck.selectedCards.isEmpty {
@@ -35,11 +36,11 @@ struct ContentView: View {
 						 ForEach(deck.selectedCards) { selected in
 							 CardView(card: selected)
 								 .padding(0)
-								 .frame(width: 150, height: 180)
 								 .scaleEffect(
-									x: self.deck.scale(of: selected) * 0.50,
-									y: self.deck.scale(of: selected) * 0.50
+									x: self.deck.scale(of: selected) * 0.40,
+									y: self.deck.scale(of: selected) * 0.40
 								 )
+								 .frame(width: 140, height: 140)
 								 .gesture (
 									DragGesture()
 										.onChanged( { (drag) in
@@ -73,7 +74,7 @@ struct ContentView: View {
 			 if deck.cards.isEmpty {
 				 Spacer()
 				 Text("You don't have any cards.")
-				 Spacer()
+					 .foregroundColor(.secondary)
 			 }
 				Spacer()
 				ZStack {
@@ -87,7 +88,7 @@ struct ContentView: View {
 							)
 							.offset(y: deck.deckOffset(of: card))
 							.scaleEffect(
-							x: self.deck.scale(of: card),
+							  x: self.deck.scale(of: card),
 							y: self.deck.scale(of: card)
 							)
 							.rotationEffect(self.rotation(of: card))
@@ -112,8 +113,14 @@ struct ContentView: View {
 										}
 									}
 									
-									if drag.translation.height < -150 {
+									if drag.translation.height < -200 {
 											self.deck.select(card)
+									}
+									
+									if drag.translation.height > 100  {
+										showingDeleteButton = true
+									} else {
+										showingDeleteButton = false
 									}
 								})
 								.onEnded( { (drag) in
@@ -127,6 +134,32 @@ struct ContentView: View {
 					}
 				}
 			   Spacer()
+			  if showingDeleteButton == true {
+				 Button(action:  {
+					 /*
+					  WORKAROUND
+					  
+					  The delete button only appears when users drag
+					  the top card to the bottom of the screen.
+					  
+					  So, we can use the removeFirst() method here
+					  to delete it from the deck.
+					  
+					  This solution isn't ideal because it will only
+					  work with this particular design.
+					  
+					  But it'll do for now.
+					  */
+					 deck.cards.removeFirst()
+				 }) {
+					 Label("Delete", systemImage: "trash")
+						 .frame(width: 110, height: 30)
+						 .foregroundColor(Color.white)
+						 .background(Color.red.opacity(0.7))
+						 .clipShape(RoundedRectangle(cornerRadius: 50.0))
+						 .padding()
+				 }
+			 }
 		 }
     }
 	
