@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC62BEDD27AD728D00DA4FF9 /* ImpossibleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62BEDC27AD728D00DA4FF9 /* ImpossibleGrid.swift */; };
+		BC62BEDF27AD7FD700DA4FF9 /* HowGridsWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62BEDE27AD7FD700DA4FF9 /* HowGridsWork.swift */; };
 		BC6DA01A27AC1B3F00AE498A /* GridsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6DA01927AC1B3F00AE498A /* GridsApp.swift */; };
 		BC6DA01C27AC1B3F00AE498A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6DA01B27AC1B3F00AE498A /* ContentView.swift */; };
 		BC6DA01E27AC1B4100AE498A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6DA01D27AC1B4100AE498A /* Assets.xcassets */; };
 		BC6DA02127AC1B4100AE498A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6DA02027AC1B4100AE498A /* Preview Assets.xcassets */; };
-		BCC5460A27AC357300588006 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5460927AC357300588006 /* GridView.swift */; };
+		BC8FB3F727AD96F100DFACE5 /* MondrianGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FB3F627AD96F100DFACE5 /* MondrianGrid.swift */; };
+		BCC5460A27AC357300588006 /* FluidGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5460927AC357300588006 /* FluidGrid.swift */; };
 		BCC5461027AC35D400588006 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5460F27AC35D400588006 /* Item.swift */; };
 		BCC5461427AC3B6200588006 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5461327AC3B6200588006 /* GridStack.swift */; };
 		BCC5461927AC583100588006 /* LayoutIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC5461827AC583100588006 /* LayoutIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC62BEDC27AD728D00DA4FF9 /* ImpossibleGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpossibleGrid.swift; sourceTree = "<group>"; };
+		BC62BEDE27AD7FD700DA4FF9 /* HowGridsWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowGridsWork.swift; sourceTree = "<group>"; };
 		BC6DA01627AC1B3F00AE498A /* Grids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6DA01927AC1B3F00AE498A /* GridsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsApp.swift; sourceTree = "<group>"; };
 		BC6DA01B27AC1B3F00AE498A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC6DA01D27AC1B4100AE498A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6DA02027AC1B4100AE498A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BCC5460927AC357300588006 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		BC8FB3F627AD96F100DFACE5 /* MondrianGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondrianGrid.swift; sourceTree = "<group>"; };
+		BCC5460927AC357300588006 /* FluidGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluidGrid.swift; sourceTree = "<group>"; };
 		BCC5460F27AC35D400588006 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BCC5461327AC3B6200588006 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		BCC5461827AC583100588006 /* LayoutIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutIcon.swift; sourceTree = "<group>"; };
@@ -61,8 +67,11 @@
 			children = (
 				BC6DA01927AC1B3F00AE498A /* GridsApp.swift */,
 				BC6DA01B27AC1B3F00AE498A /* ContentView.swift */,
-				BCC5460927AC357300588006 /* GridView.swift */,
+				BCC5460927AC357300588006 /* FluidGrid.swift */,
 				BCC5461327AC3B6200588006 /* GridStack.swift */,
+				BC62BEDE27AD7FD700DA4FF9 /* HowGridsWork.swift */,
+				BC8FB3F627AD96F100DFACE5 /* MondrianGrid.swift */,
+				BC62BEDC27AD728D00DA4FF9 /* ImpossibleGrid.swift */,
 				BCC5461827AC583100588006 /* LayoutIcon.swift */,
 				BCC5461227AC35F600588006 /* Model */,
 				BCC5461127AC35F000588006 /* Extensions */,
@@ -167,10 +176,13 @@
 			files = (
 				BC6DA01C27AC1B3F00AE498A /* ContentView.swift in Sources */,
 				BCC5461427AC3B6200588006 /* GridStack.swift in Sources */,
-				BCC5460A27AC357300588006 /* GridView.swift in Sources */,
+				BC62BEDD27AD728D00DA4FF9 /* ImpossibleGrid.swift in Sources */,
+				BC8FB3F727AD96F100DFACE5 /* MondrianGrid.swift in Sources */,
+				BCC5460A27AC357300588006 /* FluidGrid.swift in Sources */,
 				BCC5461027AC35D400588006 /* Item.swift in Sources */,
 				BCC5461927AC583100588006 /* LayoutIcon.swift in Sources */,
 				BC6DA01A27AC1B3F00AE498A /* GridsApp.swift in Sources */,
+				BC62BEDF27AD7FD700DA4FF9 /* HowGridsWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

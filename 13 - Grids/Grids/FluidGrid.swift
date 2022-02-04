@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GridView: View {
+struct FluidGrid: View {
 	let items = [Item](
 		repeating: Item(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas sed tempus urna et pharetra pharetra. Risus feugiat in ante metus. Tortor consequat id porta nibh venenatis cras. Rhoncus urna neque viverra justo nec ultrices dui sapien."),
 		count: 50)
@@ -103,8 +103,8 @@ struct GridView: View {
 	}
 }
 
-struct GridView_Previews: PreviewProvider {
+struct FluidGrid_Previews: PreviewProvider {
     static var previews: some View {
-        GridView()
+        FluidGrid()
     }
 }
