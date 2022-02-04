@@ -7,51 +7,75 @@
 
 import SwiftUI
 
+/*
+ In SwiftUI, parent views can propose a size
+ to child views, but those child views can ignore it.
+ 
+ This is true with lazy grids, too.
+ 
+ We can use this to create views that span multiple columns.
+ */
+
 struct MondrianGrid: View {
 	let columns = [
-		GridItem(.fixed(70), spacing: 5, alignment: .top),
-		GridItem(.fixed(200), spacing: 0, alignment: .top)
+		GridItem(.fixed(50), spacing: 5, alignment: .topLeading),
+		GridItem(.fixed(50), spacing: 5, alignment: .leading),
+		GridItem(.fixed(50), spacing: 5, alignment: .leading)
 	]
 	
 	  var body: some View {
-		  LazyVGrid(columns: columns, spacing: 0) {
-			  ForEach(0..<6) { index in
-				  VStack {
-					  if index == 0 {
-						  Rectangle()
-							  .fill(Color.white)
-							  .frame(height: 100)
-					  } else if index == 1 {
-						  Rectangle()
-							  .fill(Color.red)
-							  .frame(height: 100)
-					  } else if index == 2 {
-						  Rectangle()
-							  .fill(Color.white)
-							  .padding(.vertical, 5)
-							  .frame(height: 100)
-					  } else if index == 3 {
-						  Rectangle()
-							  .fill(Color.red)
-							  .frame(height: 100)
-					  } else if index == 4 {
-						  Rectangle()
-							  .fill(Color.blue)
-							  .frame(height: 70)
-					  } else if index == 5 {
-						  Rectangle()
-							  .fill(Color.white)
-							  .padding(.vertical, 5)
-							  .frame(height: 70)
-					  }
-										
+		  LazyVGrid(columns: columns, spacing: 10) {
+			  ForEach(0..<7) { index in
+				  Rectangle()
+					  .fill(chooseColor(for: index))
+					  .frame(
+						width: chooseFrame(for: index).width,
+						height: chooseFrame(for: index).height
+					  )
+					  .overlay(Text("\(index)"))
+				  /*
+					Although these items will grow to twice their size,
+					the grid isn't aware of this and will place the next
+					item accordingly.
+					
+					To avoid overlapping, this adds a transparent view in
+					its place.
+					*/
+				  if index == 3 || index == 1  {
+					  Color.clear
 				  }
 			  }
-		  }
-		  .padding()
+		}
+		  .padding(5)
 		  .background(Color.black)
-		  .frame(maxWidth: 290)
+		  .frame(maxWidth: 150)
+		  
 	}
+	
+	func chooseColor(for index: Int) -> Color {
+		if index == 1 {
+			return Color.red
+		} else if index == 2 {
+			return Color.blue
+		} else if index == 6 {
+			return Color.yellow
+		}
+		return Color.white
+	}
+	
+	func chooseFrame(for index: Int) -> (width: CGFloat, height: CGFloat) {
+		if index == 0 {
+			return (width: 50, height: 100)
+		} else if index == 1 {
+			return (width: 105, height: 100)
+		} else if index == 3 {
+			return (width: 105, height: 50)
+		} else if index == 4 || index == 5 || index == 6 {
+			return (width: 50, height: 20)
+		}
+		return (width: 50, height: 50)
+	}
+	
 }
 
 struct MondrianGrid_Previews: PreviewProvider {
