@@ -8,12 +8,14 @@
 import SwiftUI
 
 /*
+ 
  In SwiftUI, parent views can propose a size
  to child views, but those child views can ignore it.
- 
+  
  This is true with lazy grids, too.
  
  We can use this to create views that span multiple columns.
+ 
  */
 
 struct MondrianGrid: View {
