@@ -33,7 +33,7 @@ struct PolygonShape: Shape {
 }
 
 struct HoneycombGrid: View {
-	let columns: Int = 6
+	let columns: Int = 4
 	let spacing: CGFloat = 10
 	let size = CGSize(width: 100, height: 100)
 	var hexagonWidth: CGFloat {
