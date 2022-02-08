@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HowGridsWork: View {
+struct GridBasics: View {
 	
 	let content = [
 		GridItem(.fixed(50)),
@@ -48,8 +48,8 @@ struct HowGridsWork: View {
 }
 
 
-struct HowGridsWork_Previews: PreviewProvider {
+struct GridBasics_Previews: PreviewProvider {
     static var previews: some View {
-        HowGridsWork()
+        GridBasics()
     }
 }
