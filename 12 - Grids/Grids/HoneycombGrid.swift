@@ -33,7 +33,7 @@ struct PolygonShape: Shape {
 }
 
 struct HoneycombGrid: View {
-	let columns: Int = 4
+	let columns: Int = 6
 	let spacing: CGFloat = 10
 	let size = CGSize(width: 100, height: 100)
 	var hexagonWidth: CGFloat {
@@ -56,7 +56,7 @@ struct HoneycombGrid: View {
 							 .clipShape(PolygonShape(sides: 6).rotation(Angle.degrees(90)))
 							 .offset(x: isEvenRow(index) ? 0 : hexagonWidth / 2 + (spacing / 2))
 					 }
-					 .frame(width: hexagonWidth, height: size.height * 0.75)
+					 .frame(width: hexagonWidth, height: size.height)
 				 }
 			 }
 			 .frame(width: (hexagonWidth + spacing) * CGFloat(columns - 1))
