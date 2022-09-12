@@ -6,5 +6,6 @@
         <page name='Date Arithmetic'/>
         <page name='Adding Syntactic Sugar'/>
         <page name='Summary'/>
+        <page name='New'/>
     </pages>
 </playground>

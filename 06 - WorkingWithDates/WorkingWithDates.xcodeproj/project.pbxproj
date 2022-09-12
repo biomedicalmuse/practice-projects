@@ -3,30 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC7F7AF02794B81A005A9738 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AEF2794B81A005A9738 /* WeatherApp.swift */; };
-		BC7F7AF22794B81A005A9738 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AF12794B81A005A9738 /* ContentView.swift */; };
-		BC7F7AF42794B81C005A9738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F7AF32794B81C005A9738 /* Assets.xcassets */; };
-		BC7F7AF72794B81C005A9738 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F7AF62794B81C005A9738 /* Preview Assets.xcassets */; };
-		BC7F7AFE2794BA23005A9738 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AFD2794BA23005A9738 /* Cloud.swift */; };
-		BC7F7B002794BB74005A9738 /* CloudGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AFF2794BB74005A9738 /* CloudGroup.swift */; };
+		BC13E35826D2ED26002B505B /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13E35726D2ED26002B505B /* Events.swift */; };
+		BC51FBAA269E28920069C1B3 /* WorkingWithDatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51FBA9269E28920069C1B3 /* WorkingWithDatesApp.swift */; };
+		BC51FBAC269E28920069C1B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC51FBAB269E28920069C1B3 /* ContentView.swift */; };
+		BC51FBAE269E28950069C1B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC51FBAD269E28950069C1B3 /* Assets.xcassets */; };
+		BC51FBB1269E28950069C1B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC51FBB0269E28950069C1B3 /* Preview Assets.xcassets */; };
+		BCEEFEBC26BC8290000A1C67 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */; };
+		BCEEFEBE26BC8387000A1C67 /* CalculateTimeBetweenDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBD26BC8387000A1C67 /* CalculateTimeBetweenDates.swift */; };
+		BCEEFEC026BC8581000A1C67 /* SortDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEEFEBF26BC8581000A1C67 /* SortDates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC7F7AEC2794B81A005A9738 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC7F7AEF2794B81A005A9738 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
-		BC7F7AF12794B81A005A9738 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BC7F7AF32794B81C005A9738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC7F7AF62794B81C005A9738 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC7F7AFD2794BA23005A9738 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		BC7F7AFF2794BB74005A9738 /* CloudGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGroup.swift; sourceTree = "<group>"; };
+		BC13E35726D2ED26002B505B /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		BC51FBA6269E28920069C1B3 /* WorkingWithDates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingWithDates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC51FBA9269E28920069C1B3 /* WorkingWithDatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithDatesApp.swift; sourceTree = "<group>"; };
+		BC51FBAB269E28920069C1B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC51FBAD269E28950069C1B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC51FBB0269E28950069C1B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC51FBB2269E28950069C1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		BCEEFEBD26BC8387000A1C67 /* CalculateTimeBetweenDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTimeBetweenDates.swift; sourceTree = "<group>"; };
+		BCEEFEBF26BC8581000A1C67 /* SortDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortDates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BC7F7AE92794B81A005A9738 /* Frameworks */ = {
+		BC51FBA3269E28920069C1B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,138 +41,158 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC7F7AE32794B81A005A9738 = {
+		BC13E35A26D2EE5A002B505B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F7AEE2794B81A005A9738 /* Weather */,
-				BC7F7AED2794B81A005A9738 /* Products */,
+				BCEEFEBB26BC8290000A1C67 /* DateExtension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BC450C3A26D5981D0015CEE4 /* SortDates */ = {
+			isa = PBXGroup;
+			children = (
+				BC13E35726D2ED26002B505B /* Events.swift */,
+				BCEEFEBF26BC8581000A1C67 /* SortDates.swift */,
+			);
+			path = SortDates;
+			sourceTree = "<group>";
+		};
+		BC51FB9D269E28920069C1B3 = {
+			isa = PBXGroup;
+			children = (
+				BC51FBA8269E28920069C1B3 /* WorkingWithDates */,
+				BC51FBA7269E28920069C1B3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BC7F7AED2794B81A005A9738 /* Products */ = {
+		BC51FBA7269E28920069C1B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F7AEC2794B81A005A9738 /* Weather.app */,
+				BC51FBA6269E28920069C1B3 /* WorkingWithDates.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC7F7AEE2794B81A005A9738 /* Weather */ = {
+		BC51FBA8269E28920069C1B3 /* WorkingWithDates */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F7AEF2794B81A005A9738 /* WeatherApp.swift */,
-				BC7F7AF12794B81A005A9738 /* ContentView.swift */,
-				BC7F7B032794CA06005A9738 /* Model */,
-				BC7F7AF32794B81C005A9738 /* Assets.xcassets */,
-				BC7F7AF52794B81C005A9738 /* Preview Content */,
+				BC51FBA9269E28920069C1B3 /* WorkingWithDatesApp.swift */,
+				BC51FBAB269E28920069C1B3 /* ContentView.swift */,
+				BCEEFEC126BC85CD000A1C67 /* Examples */,
+				BC13E35A26D2EE5A002B505B /* Helpers */,
+				BC51FBAD269E28950069C1B3 /* Assets.xcassets */,
+				BC51FBB2269E28950069C1B3 /* Info.plist */,
+				BC51FBAF269E28950069C1B3 /* Preview Content */,
 			);
-			path = Weather;
+			path = WorkingWithDates;
 			sourceTree = "<group>";
 		};
-		BC7F7AF52794B81C005A9738 /* Preview Content */ = {
+		BC51FBAF269E28950069C1B3 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F7AF62794B81C005A9738 /* Preview Assets.xcassets */,
+				BC51FBB0269E28950069C1B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BC7F7B032794CA06005A9738 /* Model */ = {
+		BCEEFEC126BC85CD000A1C67 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F7AFD2794BA23005A9738 /* Cloud.swift */,
-				BC7F7AFF2794BB74005A9738 /* CloudGroup.swift */,
+				BC450C3A26D5981D0015CEE4 /* SortDates */,
+				BCEEFEBD26BC8387000A1C67 /* CalculateTimeBetweenDates.swift */,
 			);
-			path = Model;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BC7F7AEB2794B81A005A9738 /* Weather */ = {
+		BC51FBA5269E28920069C1B3 /* WorkingWithDates */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BC7F7AFA2794B81C005A9738 /* Build configuration list for PBXNativeTarget "Weather" */;
+			buildConfigurationList = BC51FBB5269E28950069C1B3 /* Build configuration list for PBXNativeTarget "WorkingWithDates" */;
 			buildPhases = (
-				BC7F7AE82794B81A005A9738 /* Sources */,
-				BC7F7AE92794B81A005A9738 /* Frameworks */,
-				BC7F7AEA2794B81A005A9738 /* Resources */,
+				BC51FBA2269E28920069C1B3 /* Sources */,
+				BC51FBA3269E28920069C1B3 /* Frameworks */,
+				BC51FBA4269E28920069C1B3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Weather;
-			productName = Weather;
-			productReference = BC7F7AEC2794B81A005A9738 /* Weather.app */;
+			name = WorkingWithDates;
+			productName = WorkingWithDates;
+			productReference = BC51FBA6269E28920069C1B3 /* WorkingWithDates.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BC7F7AE42794B81A005A9738 /* Project object */ = {
+		BC51FB9E269E28920069C1B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					BC7F7AEB2794B81A005A9738 = {
-						CreatedOnToolsVersion = 13.2.1;
+					BC51FBA5269E28920069C1B3 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = BC7F7AE72794B81A005A9738 /* Build configuration list for PBXProject "Weather" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = BC51FBA1269E28920069C1B3 /* Build configuration list for PBXProject "WorkingWithDates" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = BC7F7AE32794B81A005A9738;
-			productRefGroup = BC7F7AED2794B81A005A9738 /* Products */;
+			mainGroup = BC51FB9D269E28920069C1B3;
+			productRefGroup = BC51FBA7269E28920069C1B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC7F7AEB2794B81A005A9738 /* Weather */,
+				BC51FBA5269E28920069C1B3 /* WorkingWithDates */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BC7F7AEA2794B81A005A9738 /* Resources */ = {
+		BC51FBA4269E28920069C1B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7F7AF72794B81C005A9738 /* Preview Assets.xcassets in Resources */,
-				BC7F7AF42794B81C005A9738 /* Assets.xcassets in Resources */,
+				BC51FBB1269E28950069C1B3 /* Preview Assets.xcassets in Resources */,
+				BC51FBAE269E28950069C1B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BC7F7AE82794B81A005A9738 /* Sources */ = {
+		BC51FBA2269E28920069C1B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC7F7AF22794B81A005A9738 /* ContentView.swift in Sources */,
-				BC7F7AFE2794BA23005A9738 /* Cloud.swift in Sources */,
-				BC7F7AF02794B81A005A9738 /* WeatherApp.swift in Sources */,
-				BC7F7B002794BB74005A9738 /* CloudGroup.swift in Sources */,
+				BC51FBAC269E28920069C1B3 /* ContentView.swift in Sources */,
+				BCEEFEBC26BC8290000A1C67 /* DateExtension.swift in Sources */,
+				BC51FBAA269E28920069C1B3 /* WorkingWithDatesApp.swift in Sources */,
+				BC13E35826D2ED26002B505B /* Events.swift in Sources */,
+				BCEEFEC026BC8581000A1C67 /* SortDates.swift in Sources */,
+				BCEEFEBE26BC8387000A1C67 /* CalculateTimeBetweenDates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BC7F7AF82794B81C005A9738 /* Debug */ = {
+		BC51FBB3269E28950069C1B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -212,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -222,13 +247,13 @@
 			};
 			name = Debug;
 		};
-		BC7F7AF92794B81C005A9738 /* Release */ = {
+		BC51FBB4269E28950069C1B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -267,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -277,61 +302,45 @@
 			};
 			name = Release;
 		};
-		BC7F7AFB2794B81C005A9738 /* Debug */ = {
+		BC51FBB6269E28950069C1B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Weather/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorkingWithDates/Preview Content\"";
 				DEVELOPMENT_TEAM = 68467CPVLE;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				INFOPLIST_FILE = WorkingWithDates/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = biomedicalmuse.Weather;
+				PRODUCT_BUNDLE_IDENTIFIER = biomedicalmuse.WorkingWithDates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BC7F7AFC2794B81C005A9738 /* Release */ = {
+		BC51FBB7269E28950069C1B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Weather/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WorkingWithDates/Preview Content\"";
 				DEVELOPMENT_TEAM = 68467CPVLE;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				INFOPLIST_FILE = WorkingWithDates/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = biomedicalmuse.Weather;
+				PRODUCT_BUNDLE_IDENTIFIER = biomedicalmuse.WorkingWithDates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,25 +349,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC7F7AE72794B81A005A9738 /* Build configuration list for PBXProject "Weather" */ = {
+		BC51FBA1269E28920069C1B3 /* Build configuration list for PBXProject "WorkingWithDates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC7F7AF82794B81C005A9738 /* Debug */,
-				BC7F7AF92794B81C005A9738 /* Release */,
+				BC51FBB3269E28950069C1B3 /* Debug */,
+				BC51FBB4269E28950069C1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC7F7AFA2794B81C005A9738 /* Build configuration list for PBXNativeTarget "Weather" */ = {
+		BC51FBB5269E28950069C1B3 /* Build configuration list for PBXNativeTarget "WorkingWithDates" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC7F7AFB2794B81C005A9738 /* Debug */,
-				BC7F7AFC2794B81C005A9738 /* Release */,
+				BC51FBB6269E28950069C1B3 /* Debug */,
+				BC51FBB7269E28950069C1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BC7F7AE42794B81A005A9738 /* Project object */;
+	rootObject = BC51FB9E269E28920069C1B3 /* Project object */;
 }
