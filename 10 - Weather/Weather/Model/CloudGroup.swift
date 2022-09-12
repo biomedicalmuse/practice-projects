@@ -12,6 +12,7 @@ import Foundation
 class CloudGroup {
 	 var clouds = [Cloud]()
 	 let opacity: Double
+	 var lastUpdate = Date.now
 	
 	/*
 	 For any given level of cloud thickness, we’re going to adjust three values:
@@ -61,4 +62,26 @@ class CloudGroup {
 			 clouds.append(cloud)
 		}
 	}
+	
+	/// A method that figures out how much time has passed since the clouds last moved and adjusts their position accordingly
+	///
+	/// Each cloud's position is adjusted by multiplying a time delta by each cloud's speed.
+	/// - Parameter date: a Date
+	func update(date: Date) {
+		 let delta = date.timeIntervalSince1970 - lastUpdate.timeIntervalSince1970
+
+		 for cloud in clouds {
+			  cloud.position.x -= delta * cloud.speed
+			  // Moves clouds to the right when they move off-screen
+			  let offScreenDistance = max(400, 400 * cloud.scale)
+
+			  if cloud.position.x < -offScreenDistance {
+				  cloud.position.x = offScreenDistance
+			  }
+		 }
+
+		 lastUpdate = date
+	}
+	
+	
 }

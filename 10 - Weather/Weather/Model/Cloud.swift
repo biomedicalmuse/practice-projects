@@ -14,7 +14,7 @@ class Cloud {
 	 let speed = Double.random(in: 4...12)
 	 let scale: Double
 	
-	enum Thickness {
+	enum Thickness: CaseIterable {
 		 case none, thin, light, regular, thick, ultra
 	}
 	
