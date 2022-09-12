@@ -11,8 +11,8 @@
 		BC7F7AF22794B81A005A9738 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AF12794B81A005A9738 /* ContentView.swift */; };
 		BC7F7AF42794B81C005A9738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F7AF32794B81C005A9738 /* Assets.xcassets */; };
 		BC7F7AF72794B81C005A9738 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7F7AF62794B81C005A9738 /* Preview Assets.xcassets */; };
-		BC7F7AFE2794BA23005A9738 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AFD2794BA23005A9738 /* Cloud.swift */; };
-		BC7F7B002794BB74005A9738 /* CloudGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7F7AFF2794BB74005A9738 /* CloudGroup.swift */; };
+		BCBFE34828CF91A400884ABA /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE34728CF91A400884ABA /* Cloud.swift */; };
+		BCBFE34A28CF92E300884ABA /* CloudGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE34928CF92E300884ABA /* CloudGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +21,8 @@
 		BC7F7AF12794B81A005A9738 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BC7F7AF32794B81C005A9738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC7F7AF62794B81C005A9738 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC7F7AFD2794BA23005A9738 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		BC7F7AFF2794BB74005A9738 /* CloudGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGroup.swift; sourceTree = "<group>"; };
+		BCBFE34728CF91A400884ABA /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		BCBFE34928CF92E300884ABA /* CloudGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			children = (
 				BC7F7AEF2794B81A005A9738 /* WeatherApp.swift */,
 				BC7F7AF12794B81A005A9738 /* ContentView.swift */,
-				BC7F7B032794CA06005A9738 /* Model */,
+				BCBFE34B28CF944400884ABA /* Model */,
 				BC7F7AF32794B81C005A9738 /* Assets.xcassets */,
 				BC7F7AF52794B81C005A9738 /* Preview Content */,
 			);
@@ -72,11 +72,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BC7F7B032794CA06005A9738 /* Model */ = {
+		BCBFE34B28CF944400884ABA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC7F7AFD2794BA23005A9738 /* Cloud.swift */,
-				BC7F7AFF2794BB74005A9738 /* CloudGroup.swift */,
+				BCBFE34728CF91A400884ABA /* Cloud.swift */,
+				BCBFE34928CF92E300884ABA /* CloudGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,10 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBFE34828CF91A400884ABA /* Cloud.swift in Sources */,
 				BC7F7AF22794B81A005A9738 /* ContentView.swift in Sources */,
-				BC7F7AFE2794BA23005A9738 /* Cloud.swift in Sources */,
 				BC7F7AF02794B81A005A9738 /* WeatherApp.swift in Sources */,
-				BC7F7B002794BB74005A9738 /* CloudGroup.swift in Sources */,
+				BCBFE34A28CF92E300884ABA /* CloudGroup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
