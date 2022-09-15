@@ -19,6 +19,26 @@ extension Color {
 	 static let sunsetStart = Color.sunriseStart
 	 static let sunsetEnd = Color(hue: 0.05, saturation: 0.34, brightness: 0.65)
 	
+	// Colors for the tint of clouds
+	/*
+	 
+	 Dark clouds have darker colors at the top, as if there is light reflecting off the ground below.
+	 These clouds have a blue tint to them, as if lit up by moonlight.
+	 
+    Clouds at sunrise and sunset have colors at the bottom, as if the sun was hovering around the horizon.
+   
+	 Daytime clouds have bright white at the top, as if there is sun shining down on them. 
+
+	 */
+	static let darkCloudStart = Color(hue: 0.65, saturation: 0.3, brightness: 0.3)
+	static let darkCloudEnd = Color(hue: 0.65, saturation: 0.3, brightness: 0.7)
+	static let lightCloudStart = Color.white
+	static let lightCloudEnd = Color(white: 0.75)
+	static let sunriseCloudStart = Color.lightCloudStart
+	static let sunriseCloudEnd = Color.sunriseEnd
+	static let sunsetCloudStart = Color.lightCloudStart
+	static let sunsetCloudEnd = Color.sunsetEnd
+	
 	/// A method that retrieves RGBA values for a given Color.
 	/// - Returns: an RGBA value
 	func getComponents() -> (red: Double, green: Double, blue: Double, alpha: Double) {
