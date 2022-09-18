@@ -19,6 +19,7 @@
 		BCBFE34828CF91A400884ABA /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE34728CF91A400884ABA /* Cloud.swift */; };
 		BCBFE34A28CF92E300884ABA /* CloudGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE34928CF92E300884ABA /* CloudGroup.swift */; };
 		BCBFE34D28CF957C00884ABA /* CloudsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBFE34C28CF957C00884ABA /* CloudsView.swift */; };
+		BCED7EA628D7A1BC002D7F3A /* Storm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED7EA528D7A1BC002D7F3A /* Storm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BCBFE34728CF91A400884ABA /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		BCBFE34928CF92E300884ABA /* CloudGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGroup.swift; sourceTree = "<group>"; };
 		BCBFE34C28CF957C00884ABA /* CloudsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsView.swift; sourceTree = "<group>"; };
+		BCED7EA528D7A1BC002D7F3A /* Storm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				BCBFE34928CF92E300884ABA /* CloudGroup.swift */,
 				BC624E0A28D37E3700446442 /* Star.swift */,
 				BC624E0C28D37E9700446442 /* StarField.swift */,
+				BCED7EA528D7A1BC002D7F3A /* Storm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				BC624E0F28D37FEA00446442 /* StarsView.swift in Sources */,
 				BCBFE34828CF91A400884ABA /* Cloud.swift in Sources */,
 				BC624E0D28D37E9700446442 /* StarField.swift in Sources */,
+				BCED7EA628D7A1BC002D7F3A /* Storm.swift in Sources */,
 				BC7F7AF22794B81A005A9738 /* ContentView.swift in Sources */,
 				BC63F0AC28D1068400D9C814 /* Array-Extension.swift in Sources */,
 				BC7F7AF02794B81A005A9738 /* WeatherApp.swift in Sources */,
