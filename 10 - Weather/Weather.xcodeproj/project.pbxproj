@@ -22,6 +22,10 @@
 		BCED7EA628D7A1BC002D7F3A /* Storm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED7EA528D7A1BC002D7F3A /* Storm.swift */; };
 		BCED7EA828D7A259002D7F3A /* StormDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED7EA728D7A259002D7F3A /* StormDrop.swift */; };
 		BCED7EAA28D7A564002D7F3A /* StormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCED7EA928D7A564002D7F3A /* StormView.swift */; };
+		BCFEB76428D8E256006CD34C /* ResidueDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEB76328D8E256006CD34C /* ResidueDrop.swift */; };
+		BCFEB76628D8E4A7006CD34C /* Residue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEB76528D8E4A7006CD34C /* Residue.swift */; };
+		BCFEB76828D8E8A1006CD34C /* ResidueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEB76728D8E8A1006CD34C /* ResidueView.swift */; };
+		BCFEB76A28D8E9FA006CD34C /* WeatherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFEB76928D8E9FA006CD34C /* WeatherDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		BCED7EA528D7A1BC002D7F3A /* Storm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storm.swift; sourceTree = "<group>"; };
 		BCED7EA728D7A259002D7F3A /* StormDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormDrop.swift; sourceTree = "<group>"; };
 		BCED7EA928D7A564002D7F3A /* StormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormView.swift; sourceTree = "<group>"; };
+		BCFEB76328D8E256006CD34C /* ResidueDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidueDrop.swift; sourceTree = "<group>"; };
+		BCFEB76528D8E4A7006CD34C /* Residue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Residue.swift; sourceTree = "<group>"; };
+		BCFEB76728D8E8A1006CD34C /* ResidueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidueView.swift; sourceTree = "<group>"; };
+		BCFEB76928D8E9FA006CD34C /* WeatherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 				BCBFE34C28CF957C00884ABA /* CloudsView.swift */,
 				BC624E0E28D37FEA00446442 /* StarsView.swift */,
 				BCED7EA928D7A564002D7F3A /* StormView.swift */,
+				BCFEB76728D8E8A1006CD34C /* ResidueView.swift */,
+				BCFEB76928D8E9FA006CD34C /* WeatherDetailsView.swift */,
 				BCBFE34B28CF944400884ABA /* Model */,
 				BC7F7AF32794B81C005A9738 /* Assets.xcassets */,
 				BC7F7AF52794B81C005A9738 /* Preview Content */,
@@ -104,6 +114,8 @@
 				BC624E0C28D37E9700446442 /* StarField.swift */,
 				BCED7EA528D7A1BC002D7F3A /* Storm.swift */,
 				BCED7EA728D7A259002D7F3A /* StormDrop.swift */,
+				BCFEB76328D8E256006CD34C /* ResidueDrop.swift */,
+				BCFEB76528D8E4A7006CD34C /* Residue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,11 +191,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC624E0F28D37FEA00446442 /* StarsView.swift in Sources */,
+				BCFEB76A28D8E9FA006CD34C /* WeatherDetailsView.swift in Sources */,
 				BCBFE34828CF91A400884ABA /* Cloud.swift in Sources */,
+				BCFEB76428D8E256006CD34C /* ResidueDrop.swift in Sources */,
 				BCED7EAA28D7A564002D7F3A /* StormView.swift in Sources */,
 				BC624E0D28D37E9700446442 /* StarField.swift in Sources */,
 				BCED7EA628D7A1BC002D7F3A /* Storm.swift in Sources */,
+				BCFEB76628D8E4A7006CD34C /* Residue.swift in Sources */,
 				BC7F7AF22794B81A005A9738 /* ContentView.swift in Sources */,
+				BCFEB76828D8E8A1006CD34C /* ResidueView.swift in Sources */,
 				BC63F0AC28D1068400D9C814 /* Array-Extension.swift in Sources */,
 				BC7F7AF02794B81A005A9738 /* WeatherApp.swift in Sources */,
 				BCBFE34A28CF92E300884ABA /* CloudGroup.swift in Sources */,
