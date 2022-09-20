@@ -46,6 +46,5 @@ struct ResidueView: View {
 struct ResidueView_Previews: PreviewProvider {
 	 static var previews: some View {
 		  ResidueView(type: .rain, strength: 200)
-			 .background(.black)
 	 }
 }
