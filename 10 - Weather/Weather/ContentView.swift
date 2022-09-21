@@ -11,7 +11,7 @@ struct ContentView: View {
 	@State private var cloudThickness = Cloud.Thickness.regular
 	@State private var time = 0.0
 	
-	@State private var stormType = Storm.Contents.rain
+	@State private var stormType = Storm.Contents.none
 	
 	@State private var rainIntensity = 500.0
 	@State private var rainAngle = 0.0
@@ -93,12 +93,13 @@ struct ContentView: View {
 		 ZStack {
 			 StarsView()
 				 .opacity(starOpacity)
+			 SunView(progress: time)
 			 CloudsView(thickness: cloudThickness, topTint: cloudTopStops.interpolated(amount: time), bottomTint: cloudBottomStops.interpolated(amount: time))
 			 if stormType != .none {
 				  StormView(type: stormType, direction: .degrees(rainAngle), strength: Int(rainIntensity))
 			 }
 			 //WeatherDetailsView(tintColor: backgroundTopStops.interpolated(amount: time), residueType: stormType, residueStrength: rainIntensity)
-			 LightningView(maximumBolts: Int(lightningMaxBolts), forkProbability: Int(lightningForkProbability))
+			 //LightningView(maximumBolts: Int(lightningMaxBolts), forkProbability: Int(lightningForkProbability))
 			 
 		 }
 		 .frame(maxWidth: .infinity, maxHeight: .infinity)
