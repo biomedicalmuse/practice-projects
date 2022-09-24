@@ -11,6 +11,7 @@
 		BCACEC8F28DFA63D00A13FC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */; };
 		BCACEC9128DFA64000A13FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCACEC9028DFA64000A13FC2 /* Assets.xcassets */; };
 		BCACEC9428DFA64000A13FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */; };
+		BCACEC9B28DFA78E00A13FC2 /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCACEC9028DFA64000A13FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */,
 				BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */,
+				BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */,
 				BCACEC9028DFA64000A13FC2 /* Assets.xcassets */,
 				BCACEC9228DFA64000A13FC2 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCACEC8F28DFA63D00A13FC2 /* ContentView.swift in Sources */,
+				BCACEC9B28DFA78E00A13FC2 /* EmitterView.swift in Sources */,
 				BCACEC8D28DFA63D00A13FC2 /* ParticleSystemApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
