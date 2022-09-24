@@ -99,7 +99,7 @@ struct ContentView: View {
 				  StormView(type: stormType, direction: .degrees(rainAngle), strength: Int(rainIntensity))
 			 }
 			 //WeatherDetailsView(tintColor: backgroundTopStops.interpolated(amount: time), residueType: stormType, residueStrength: rainIntensity)
-			 //LightningView(maximumBolts: Int(lightningMaxBolts), forkProbability: Int(lightningForkProbability))
+			 LightningView(maximumBolts: Int(lightningMaxBolts), forkProbability: Int(lightningForkProbability))
 			 
 		 }
 		 .frame(maxWidth: .infinity, maxHeight: .infinity)

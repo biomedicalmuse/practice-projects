@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC4662CD28DCE61F0095101D /* Meteor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4662CC28DCE61F0095101D /* Meteor.swift */; };
+		BC4662CF28DCE6FB0095101D /* MeteorShower.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4662CE28DCE6FB0095101D /* MeteorShower.swift */; };
 		BC624E0B28D37E3700446442 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC624E0A28D37E3700446442 /* Star.swift */; };
 		BC624E0D28D37E9700446442 /* StarField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC624E0C28D37E9700446442 /* StarField.swift */; };
 		BC624E0F28D37FEA00446442 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC624E0E28D37FEA00446442 /* StarsView.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC4662CC28DCE61F0095101D /* Meteor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteor.swift; sourceTree = "<group>"; };
+		BC4662CE28DCE6FB0095101D /* MeteorShower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorShower.swift; sourceTree = "<group>"; };
 		BC624E0A28D37E3700446442 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		BC624E0C28D37E9700446442 /* StarField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarField.swift; sourceTree = "<group>"; };
 		BC624E0E28D37FEA00446442 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				BCFEB76528D8E4A7006CD34C /* Residue.swift */,
 				BCFEB76B28DA3A4E006CD34C /* LightningBolt.swift */,
 				BCFEB76D28DA3AE0006CD34C /* Lightning.swift */,
+				BC4662CC28DCE61F0095101D /* Meteor.swift */,
+				BC4662CE28DCE6FB0095101D /* MeteorShower.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC624E0F28D37FEA00446442 /* StarsView.swift in Sources */,
+				BC4662CD28DCE61F0095101D /* Meteor.swift in Sources */,
 				BCFEB76A28D8E9FA006CD34C /* WeatherDetailsView.swift in Sources */,
 				BCBFE34828CF91A400884ABA /* Cloud.swift in Sources */,
 				BCFEB76428D8E256006CD34C /* ResidueDrop.swift in Sources */,
@@ -222,6 +229,7 @@
 				BCBFE34D28CF957C00884ABA /* CloudsView.swift in Sources */,
 				BC63F0AA28D1052C00D9C814 /* Color.swift in Sources */,
 				BC9FC0B328DB9DB400CE2BF0 /* SunView.swift in Sources */,
+				BC4662CF28DCE6FB0095101D /* MeteorShower.swift in Sources */,
 				BC624E0B28D37E3700446442 /* Star.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

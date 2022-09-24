@@ -9,12 +9,43 @@ import SwiftUI
 
 struct StarsView: View {
 	@State var starField = StarField()
+	/// An @State property for tracking whether a meteor shower is happening
+	///
+	/// @State is used here because it keeps the class instance alive without actively watching it for changes.
+	@State var meteorShower = MeteorShower()
+	
     var body: some View {
 		 TimelineView(.animation) { timeline in
 			 Canvas { context, size in
 				 let timeInterval = timeline.date.timeIntervalSince1970
+				 
 				 // Moves stars to the left over time
 				 starField.update(date: timeline.date)
+				 
+				 // Update meteors
+				 meteorShower.update(date: timeline.date, size: size)
+				 
+				 // Colors for the meteor gradient
+				 let rightColors = [.clear, Color(red: 0.8, green: 1, blue: 1), .white]
+				 let leftColors = Array(rightColors.reversed())
+				 
+				 // Adjust the X position of the meteor while using the meteor's length for its width.
+				 for meteor in meteorShower.meteors {
+					  var contextCopy = context
+
+					  if meteor.isMovingRight {
+							contextCopy.rotate(by: .degrees(10))
+							let path = Path(CGRect(x: meteor.x - meteor.length, y: meteor.y, width: meteor.length, height: 2))
+						  contextCopy.fill(path, with: .linearGradient(.init(colors: rightColors), startPoint: CGPoint(x: meteor.x - meteor.length, y: 0), endPoint: CGPoint(x: meteor.x, y: 0)))
+					  } else {
+							contextCopy.rotate(by: .degrees(-10))
+							let path = Path(CGRect(x: meteor.x, y: meteor.y, width: meteor.length, height: 2))
+						  contextCopy.fill(path, with: .linearGradient(.init(colors: leftColors), startPoint: CGPoint(x: meteor.x, y: 0), endPoint: CGPoint(x: meteor.x + meteor.length, y: 0)))
+					  }
+
+					  // add a glow
+				 }
+				 
 				 // Blurs the stars
 				 context.addFilter(.blur(radius: 0.3))
 				 for (index, star) in starField.stars.enumerated() {
