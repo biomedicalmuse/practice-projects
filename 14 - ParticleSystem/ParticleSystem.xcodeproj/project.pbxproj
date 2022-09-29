@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2BB32D28E0D8DB00075B62 /* ParticlePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2BB32C28E0D8DB00075B62 /* ParticlePickerView.swift */; };
 		BCACEC8D28DFA63D00A13FC2 /* ParticleSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */; };
 		BCACEC8F28DFA63D00A13FC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */; };
 		BCACEC9128DFA64000A13FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCACEC9028DFA64000A13FC2 /* Assets.xcassets */; };
 		BCACEC9428DFA64000A13FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */; };
 		BCACEC9B28DFA78E00A13FC2 /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */; };
+		BCF71FBB28E617BC0071B9C7 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FBA28E617BC0071B9C7 /* Particle.swift */; };
+		BCF71FBD28E619370071B9C7 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FBC28E619370071B9C7 /* ParticleSystem.swift */; };
+		BCF71FBF28E61AB90071B9C7 /* FireworksEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FBE28E61AB90071B9C7 /* FireworksEmitterView.swift */; };
+		BCF71FC128E626940071B9C7 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FC028E626940071B9C7 /* ControlsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC2BB32C28E0D8DB00075B62 /* ParticlePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePickerView.swift; sourceTree = "<group>"; };
 		BCACEC8928DFA63D00A13FC2 /* ParticleSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystemApp.swift; sourceTree = "<group>"; };
 		BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCACEC9028DFA64000A13FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
+		BCF71FBA28E617BC0071B9C7 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		BCF71FBC28E619370071B9C7 /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
+		BCF71FBE28E61AB90071B9C7 /* FireworksEmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksEmitterView.swift; sourceTree = "<group>"; };
+		BCF71FC028E626940071B9C7 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +65,8 @@
 			children = (
 				BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */,
 				BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */,
-				BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */,
+				BCF71FC328E628F80071B9C7 /* GeometryReader */,
+				BCF71FC228E628D10071B9C7 /* TimelineView and Canvas */,
 				BCACEC9028DFA64000A13FC2 /* Assets.xcassets */,
 				BCACEC9228DFA64000A13FC2 /* Preview Content */,
 			);
@@ -68,6 +79,26 @@
 				BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCF71FC228E628D10071B9C7 /* TimelineView and Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				BCF71FBE28E61AB90071B9C7 /* FireworksEmitterView.swift */,
+				BCF71FC028E626940071B9C7 /* ControlsView.swift */,
+				BCF71FBA28E617BC0071B9C7 /* Particle.swift */,
+				BCF71FBC28E619370071B9C7 /* ParticleSystem.swift */,
+			);
+			path = "TimelineView and Canvas";
+			sourceTree = "<group>";
+		};
+		BCF71FC328E628F80071B9C7 /* GeometryReader */ = {
+			isa = PBXGroup;
+			children = (
+				BC2BB32C28E0D8DB00075B62 /* ParticlePickerView.swift */,
+				BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */,
+			);
+			path = GeometryReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF71FBF28E61AB90071B9C7 /* FireworksEmitterView.swift in Sources */,
+				BCF71FBD28E619370071B9C7 /* ParticleSystem.swift in Sources */,
+				BC2BB32D28E0D8DB00075B62 /* ParticlePickerView.swift in Sources */,
+				BCF71FBB28E617BC0071B9C7 /* Particle.swift in Sources */,
+				BCF71FC128E626940071B9C7 /* ControlsView.swift in Sources */,
 				BCACEC8F28DFA63D00A13FC2 /* ContentView.swift in Sources */,
 				BCACEC9B28DFA78E00A13FC2 /* EmitterView.swift in Sources */,
 				BCACEC8D28DFA63D00A13FC2 /* ParticleSystemApp.swift in Sources */,
