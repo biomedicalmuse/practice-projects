@@ -9,7 +9,7 @@ import SwiftUI
 
 /// A class that creates and manages particles
 class ParticleSystem: ObservableObject {
-	let image = Image("line")
+	let image = Image("confetti")
 	var particles = Set<Particle>()
 	var lastUpdate = Date()
 	var lastCreationDate = Date()
@@ -35,7 +35,38 @@ class ParticleSystem: ObservableObject {
 	
 	@Published var birthRate = 10.0 // how fast to create particles
 	@Published var lifetime = 500.0 // how long they should live
-	@Published var lifetimeRange = 25.0 // the range of how long they should live 
+	@Published var lifetimeRange = 25.0 // the range of how long they should live
+	
+	@Published var enableBlending = false
+	
+	@Published var rotation = 0.0
+	@Published var rotationRange = 0.0
+	@Published var rotationSpeed = 0.0
+	
+	let colors: [Color] = [.white, .red, .green, .blue, .orange, .yellow]
+	
+	/// A method that creates and returns one particle.
+	/// - Returns: one particle
+	///
+	/// The X and Y coordinates are between 0 and 1 because they will be scaled
+	/// based on the amount of space available on the screen, so the particle system
+	/// will work well across devices and orientations.
+	private func createParticle() -> Particle {
+		let angleDegrees = angle + Double.random(in: -angleRange / 2...angleRange / 2)
+		let angleRadians = angleDegrees * .pi / 180
+		
+		 return Particle(
+			x: xPosition / 100 + Double.random(in: -xPositionRange / 200...xPositionRange / 200),
+			y: yPosition / 100 + Double.random(in: -yPositionRange / 200...yPositionRange / 200),
+			angle: angleRadians,
+			speed: speed + Double.random(in: -speedRange / 2...speedRange / 2),
+			scale: scale / 100 + Double.random(in: -scaleRange / 200...scaleRange / 200),
+			opacity: opacity / 100 + Double.random(in: -opacityRange / 200...opacityRange / 200),
+			deathDate: Date() + lifetime / 100 + Double.random(in: -lifetimeRange / 200...lifetimeRange / 200),
+			rotation: rotation + Double.random(in: -rotationRange / 2...rotationRange / 2),
+			color: colors.randomElement() ?? .white
+		 )
+	}
 	
 	/// A method that accepts the current date and adds a new particle every time it's called.
 	/// - Parameter date: the current date
@@ -58,6 +89,9 @@ class ParticleSystem: ObservableObject {
 			// Adjust the scale and opacity over time.
 			particle.scale += scaleSpeed / 50 * elapsedTime
 			particle.opacity += opacitySpeed / 50 * elapsedTime
+			
+			// Spin particles over time
+			particle.rotation += rotationSpeed * elapsedTime
 		}
 		
 		/*
@@ -73,26 +107,5 @@ class ParticleSystem: ObservableObject {
 			 particles.insert(createParticle())
 			 lastCreationDate = date
 		}
-	}
-	
-	/// A method that creates and returns one particle.
-	/// - Returns: one particle
-	///
-	/// The X and Y coordinates are between 0 and 1 because they will be scaled
-	/// based on the amount of space available on the screen, so the particle system
-	/// will work well across devices and orientations.
-	private func createParticle() -> Particle {
-		let angleDegrees = angle + Double.random(in: -angleRange / 2...angleRange / 2)
-		let angleRadians = angleDegrees * .pi / 180
-		
-		 return Particle(
-			x: xPosition / 100 + Double.random(in: -xPositionRange / 200...xPositionRange / 200),
-			y: yPosition / 100 + Double.random(in: -yPositionRange / 200...yPositionRange / 200),
-			angle: angleRadians,
-			speed: speed + Double.random(in: -speedRange / 2...speedRange / 2),
-			scale: scale / 100 + Double.random(in: -scaleRange / 200...scaleRange / 200),
-			opacity: opacity / 100 + Double.random(in: -opacityRange / 200...opacityRange / 200),
-			deathDate: Date() + lifetime / 100 + Double.random(in: -lifetimeRange / 200...lifetimeRange / 200)
-		 )
 	}
 }

@@ -18,9 +18,17 @@ struct FireworksEmitterView: View {
 				 // Get the current date.
 				 particleSystem.update(date: timeline.date)
 				 
+				 // Resolve images
+				 var particleImage = context.resolve(particleSystem.image)
+				 
 				 // Get a backup of the context's transform property
 				 // so it can be restored as needed
 				 let baseTransform = context.transform
+				 
+				 // Blend overlapping particles when that setting is enabled
+				 if particleSystem.enableBlending {
+					  context.blendMode = .plusLighter
+				 }
 				 
 				 /*
 				  1. Loop over all the particles.
@@ -32,6 +40,7 @@ struct FireworksEmitterView: View {
 				 for particle in particleSystem.particles {
 					  let xPos = particle.x * size.width
 					  let yPos = particle.y * size.height
+					  let rotationAmount = Angle(degrees: particle.rotation)
 
 					  // Move
 					  context.translateBy(x: xPos, y: yPos)
@@ -39,8 +48,12 @@ struct FireworksEmitterView: View {
 					 context.scaleBy(x: particle.scale, y: particle.scale)
 					 // Change appearance
 					 context.opacity = particle.opacity
+					 // Rotate
+					 context.rotate(by: rotationAmount)
+					 // Color
+					 particleImage.shading = .color(particle.color)
 					 // Render
-					 context.draw(particleSystem.image, at: .zero)
+					 context.draw(particleImage, at: .zero)
 					  context.transform = baseTransform
 				 }
 				 

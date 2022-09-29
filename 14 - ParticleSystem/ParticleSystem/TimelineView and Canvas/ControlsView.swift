@@ -23,6 +23,8 @@ struct ControlsView: View {
 				  } header: {
 						Text("Creation")
 				  }
+				 
+				 Toggle("Blend overlapping particles", isOn: $particleSystem.enableBlending)
 				  
 				  Section {
 						VStack {
@@ -79,6 +81,14 @@ struct ControlsView: View {
 				  } header: {
 						Text("Opacity")
 				  }
+				 
+				 Section {
+					  Stepper("Base: \(particleSystem.rotation, specifier: "%g")°", value: $particleSystem.rotation, in: 0...360, step: 5)
+					  Stepper("Range: \(particleSystem.rotationRange, specifier: "%g")°", value: $particleSystem.rotationRange, in: 0...360, step: 5)
+					  Stepper("Speed: \(particleSystem.rotationSpeed, specifier: "%g")", value: $particleSystem.rotationSpeed, in: 0...100, step: 1)
+				 } header: {
+					  Text("Rotation")
+				 }
 				  
 				  
 			 }

@@ -5,7 +5,7 @@
 //  Created by Natasha Godwin on 9/29/22.
 //
 
-import Foundation
+import SwiftUI
 
 /// A class that creates a single particle.
 ///
@@ -27,8 +27,21 @@ class Particle: Hashable, Equatable {
 	var opacity: Double
 	// Lifetime
 	var deathDate: Date
+	// Behavior
+	var rotation: Double
+	var color: Color
 	
-	init(x: Double, y: Double, angle: Double, speed: Double, scale: Double, opacity: Double, deathDate: Date) {
+	init(
+		x: Double,
+		y: Double,
+		angle: Double,
+		speed: Double,
+		scale: Double,
+		opacity: Double,
+		deathDate: Date,
+		rotation: Double,
+		color: Color
+	) {
 		self.x = x
 		self.y = y
 		self.angle = angle
@@ -36,6 +49,8 @@ class Particle: Hashable, Equatable {
 		self.scale = scale
 		self.opacity = opacity
 		self.deathDate = deathDate
+		self.rotation = rotation
+		self.color = color
 	}
 	
 	static func ==(lhs: Particle, rhs: Particle) -> Bool {
