@@ -7,34 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC2BB32D28E0D8DB00075B62 /* ParticlePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2BB32C28E0D8DB00075B62 /* ParticlePickerView.swift */; };
-		BCACEC8D28DFA63D00A13FC2 /* ParticleSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */; };
-		BCACEC8F28DFA63D00A13FC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */; };
-		BCACEC9128DFA64000A13FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCACEC9028DFA64000A13FC2 /* Assets.xcassets */; };
-		BCACEC9428DFA64000A13FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */; };
-		BCACEC9B28DFA78E00A13FC2 /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */; };
-		BCF71FBB28E617BC0071B9C7 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FBA28E617BC0071B9C7 /* Particle.swift */; };
-		BCF71FBD28E619370071B9C7 /* ParticleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FBC28E619370071B9C7 /* ParticleSystem.swift */; };
-		BCF71FBF28E61AB90071B9C7 /* FireworksEmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FBE28E61AB90071B9C7 /* FireworksEmitterView.swift */; };
-		BCF71FC128E626940071B9C7 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF71FC028E626940071B9C7 /* ControlsView.swift */; };
+		BC7400492925915500C07C52 /* SkewedOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7400482925915500C07C52 /* SkewedOffset.swift */; };
+		BC74004B292592E300C07C52 /* SkewedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74004A292592E300C07C52 /* SkewedLabel.swift */; };
+		BC81ED28292432DB0028C793 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81ED27292432DB0028C793 /* Polygon.swift */; };
+		BC81ED2A29243D020028C793 /* PolygonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81ED2929243D020028C793 /* PolygonAnimation.swift */; };
+		BC81ED2C29243DE50028C793 /* ClockTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81ED2B29243DE50028C793 /* ClockTime.swift */; };
+		BC81ED2E292440FC0028C793 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81ED2D292440FC0028C793 /* Clock.swift */; };
+		BC81ED30292441CA0028C793 /* TickingClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81ED2F292441CA0028C793 /* TickingClock.swift */; };
+		BCB4BE512926DF7700357497 /* ShrinkingSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4BE502926DF7700357497 /* ShrinkingSquares.swift */; };
+		BCB4BE532926DF9B00357497 /* SquareClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB4BE522926DF9A00357497 /* SquareClock.swift */; };
+		BCBC49BA28E795E300D7E5A5 /* AdvancedAnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC49B928E795E300D7E5A5 /* AdvancedAnimationsApp.swift */; };
+		BCBC49BC28E795E300D7E5A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC49BB28E795E300D7E5A5 /* ContentView.swift */; };
+		BCBC49BE28E795E500D7E5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBC49BD28E795E500D7E5A5 /* Assets.xcassets */; };
+		BCBC49C128E795E500D7E5A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBC49C028E795E500D7E5A5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC2BB32C28E0D8DB00075B62 /* ParticlePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePickerView.swift; sourceTree = "<group>"; };
-		BCACEC8928DFA63D00A13FC2 /* ParticleSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystemApp.swift; sourceTree = "<group>"; };
-		BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		BCACEC9028DFA64000A13FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
-		BCF71FBA28E617BC0071B9C7 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
-		BCF71FBC28E619370071B9C7 /* ParticleSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSystem.swift; sourceTree = "<group>"; };
-		BCF71FBE28E61AB90071B9C7 /* FireworksEmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksEmitterView.swift; sourceTree = "<group>"; };
-		BCF71FC028E626940071B9C7 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		BC7400482925915500C07C52 /* SkewedOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkewedOffset.swift; sourceTree = "<group>"; };
+		BC74004A292592E300C07C52 /* SkewedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkewedLabel.swift; sourceTree = "<group>"; };
+		BC81ED27292432DB0028C793 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		BC81ED2929243D020028C793 /* PolygonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonAnimation.swift; sourceTree = "<group>"; };
+		BC81ED2B29243DE50028C793 /* ClockTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTime.swift; sourceTree = "<group>"; };
+		BC81ED2D292440FC0028C793 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		BC81ED2F292441CA0028C793 /* TickingClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickingClock.swift; sourceTree = "<group>"; };
+		BCB4BE502926DF7700357497 /* ShrinkingSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShrinkingSquares.swift; sourceTree = "<group>"; };
+		BCB4BE522926DF9A00357497 /* SquareClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareClock.swift; sourceTree = "<group>"; };
+		BCBC49B628E795E300D7E5A5 /* AdvancedAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvancedAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBC49B928E795E300D7E5A5 /* AdvancedAnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedAnimationsApp.swift; sourceTree = "<group>"; };
+		BCBC49BB28E795E300D7E5A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCBC49BD28E795E500D7E5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCBC49C028E795E500D7E5A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BCACEC8628DFA63C00A13FC2 /* Frameworks */ = {
+		BCBC49B328E795E300D7E5A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,99 +50,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BCACEC8028DFA63C00A13FC2 = {
+		BC98401B29259B01002AA2DF /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				BCACEC8B28DFA63D00A13FC2 /* ParticleSystem */,
-				BCACEC8A28DFA63D00A13FC2 /* Products */,
+				BC81ED2F292441CA0028C793 /* TickingClock.swift */,
+				BC81ED2D292440FC0028C793 /* Clock.swift */,
+				BC81ED2B29243DE50028C793 /* ClockTime.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		BC98401C29259B16002AA2DF /* Polygon */ = {
+			isa = PBXGroup;
+			children = (
+				BC81ED27292432DB0028C793 /* Polygon.swift */,
+				BC81ED2929243D020028C793 /* PolygonAnimation.swift */,
+			);
+			path = Polygon;
+			sourceTree = "<group>";
+		};
+		BC98401D29259B2A002AA2DF /* GeometryEffect */ = {
+			isa = PBXGroup;
+			children = (
+				BC7400482925915500C07C52 /* SkewedOffset.swift */,
+				BC74004A292592E300C07C52 /* SkewedLabel.swift */,
+			);
+			path = GeometryEffect;
+			sourceTree = "<group>";
+		};
+		BCBC49AD28E795E300D7E5A5 = {
+			isa = PBXGroup;
+			children = (
+				BCBC49B828E795E300D7E5A5 /* AdvancedAnimations */,
+				BCBC49B728E795E300D7E5A5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BCACEC8A28DFA63D00A13FC2 /* Products */ = {
+		BCBC49B728E795E300D7E5A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BCACEC8928DFA63D00A13FC2 /* ParticleSystem.app */,
+				BCBC49B628E795E300D7E5A5 /* AdvancedAnimations.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BCACEC8B28DFA63D00A13FC2 /* ParticleSystem */ = {
+		BCBC49B828E795E300D7E5A5 /* AdvancedAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				BCACEC8C28DFA63D00A13FC2 /* ParticleSystemApp.swift */,
-				BCACEC8E28DFA63D00A13FC2 /* ContentView.swift */,
-				BCF71FC328E628F80071B9C7 /* GeometryReader */,
-				BCF71FC228E628D10071B9C7 /* TimelineView and Canvas */,
-				BCACEC9028DFA64000A13FC2 /* Assets.xcassets */,
-				BCACEC9228DFA64000A13FC2 /* Preview Content */,
+				BCBC49B928E795E300D7E5A5 /* AdvancedAnimationsApp.swift */,
+				BCBC49BB28E795E300D7E5A5 /* ContentView.swift */,
+				BCB4BE522926DF9A00357497 /* SquareClock.swift */,
+				BCB4BE502926DF7700357497 /* ShrinkingSquares.swift */,
+				BC98401D29259B2A002AA2DF /* GeometryEffect */,
+				BC98401B29259B01002AA2DF /* Clock */,
+				BC98401C29259B16002AA2DF /* Polygon */,
+				BCBC49BD28E795E500D7E5A5 /* Assets.xcassets */,
+				BCBC49BF28E795E500D7E5A5 /* Preview Content */,
 			);
-			path = ParticleSystem;
+			path = AdvancedAnimations;
 			sourceTree = "<group>";
 		};
-		BCACEC9228DFA64000A13FC2 /* Preview Content */ = {
+		BCBC49BF28E795E500D7E5A5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				BCACEC9328DFA64000A13FC2 /* Preview Assets.xcassets */,
+				BCBC49C028E795E500D7E5A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		BCF71FC228E628D10071B9C7 /* TimelineView and Canvas */ = {
-			isa = PBXGroup;
-			children = (
-				BCF71FBE28E61AB90071B9C7 /* FireworksEmitterView.swift */,
-				BCF71FC028E626940071B9C7 /* ControlsView.swift */,
-				BCF71FBA28E617BC0071B9C7 /* Particle.swift */,
-				BCF71FBC28E619370071B9C7 /* ParticleSystem.swift */,
-			);
-			path = "TimelineView and Canvas";
-			sourceTree = "<group>";
-		};
-		BCF71FC328E628F80071B9C7 /* GeometryReader */ = {
-			isa = PBXGroup;
-			children = (
-				BC2BB32C28E0D8DB00075B62 /* ParticlePickerView.swift */,
-				BCACEC9A28DFA78E00A13FC2 /* EmitterView.swift */,
-			);
-			path = GeometryReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BCACEC8828DFA63C00A13FC2 /* ParticleSystem */ = {
+		BCBC49B528E795E300D7E5A5 /* AdvancedAnimations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCACEC9728DFA64000A13FC2 /* Build configuration list for PBXNativeTarget "ParticleSystem" */;
+			buildConfigurationList = BCBC49C428E795E500D7E5A5 /* Build configuration list for PBXNativeTarget "AdvancedAnimations" */;
 			buildPhases = (
-				BCACEC8528DFA63C00A13FC2 /* Sources */,
-				BCACEC8628DFA63C00A13FC2 /* Frameworks */,
-				BCACEC8728DFA63C00A13FC2 /* Resources */,
+				BCBC49B228E795E300D7E5A5 /* Sources */,
+				BCBC49B328E795E300D7E5A5 /* Frameworks */,
+				BCBC49B428E795E300D7E5A5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ParticleSystem;
-			productName = ParticleSystem;
-			productReference = BCACEC8928DFA63D00A13FC2 /* ParticleSystem.app */;
+			name = AdvancedAnimations;
+			productName = AdvancedAnimations;
+			productReference = BCBC49B628E795E300D7E5A5 /* AdvancedAnimations.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BCACEC8128DFA63C00A13FC2 /* Project object */ = {
+		BCBC49AE28E795E300D7E5A5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					BCACEC8828DFA63C00A13FC2 = {
+					BCBC49B528E795E300D7E5A5 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = BCACEC8428DFA63C00A13FC2 /* Build configuration list for PBXProject "ParticleSystem" */;
+			buildConfigurationList = BCBC49B128E795E300D7E5A5 /* Build configuration list for PBXProject "AdvancedAnimations" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,48 +161,51 @@
 				en,
 				Base,
 			);
-			mainGroup = BCACEC8028DFA63C00A13FC2;
-			productRefGroup = BCACEC8A28DFA63D00A13FC2 /* Products */;
+			mainGroup = BCBC49AD28E795E300D7E5A5;
+			productRefGroup = BCBC49B728E795E300D7E5A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BCACEC8828DFA63C00A13FC2 /* ParticleSystem */,
+				BCBC49B528E795E300D7E5A5 /* AdvancedAnimations */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BCACEC8728DFA63C00A13FC2 /* Resources */ = {
+		BCBC49B428E795E300D7E5A5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCACEC9428DFA64000A13FC2 /* Preview Assets.xcassets in Resources */,
-				BCACEC9128DFA64000A13FC2 /* Assets.xcassets in Resources */,
+				BCBC49C128E795E500D7E5A5 /* Preview Assets.xcassets in Resources */,
+				BCBC49BE28E795E500D7E5A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BCACEC8528DFA63C00A13FC2 /* Sources */ = {
+		BCBC49B228E795E300D7E5A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF71FBF28E61AB90071B9C7 /* FireworksEmitterView.swift in Sources */,
-				BCF71FBD28E619370071B9C7 /* ParticleSystem.swift in Sources */,
-				BC2BB32D28E0D8DB00075B62 /* ParticlePickerView.swift in Sources */,
-				BCF71FBB28E617BC0071B9C7 /* Particle.swift in Sources */,
-				BCF71FC128E626940071B9C7 /* ControlsView.swift in Sources */,
-				BCACEC8F28DFA63D00A13FC2 /* ContentView.swift in Sources */,
-				BCACEC9B28DFA78E00A13FC2 /* EmitterView.swift in Sources */,
-				BCACEC8D28DFA63D00A13FC2 /* ParticleSystemApp.swift in Sources */,
+				BC81ED2E292440FC0028C793 /* Clock.swift in Sources */,
+				BCBC49BC28E795E300D7E5A5 /* ContentView.swift in Sources */,
+				BCB4BE532926DF9B00357497 /* SquareClock.swift in Sources */,
+				BC81ED2A29243D020028C793 /* PolygonAnimation.swift in Sources */,
+				BCBC49BA28E795E300D7E5A5 /* AdvancedAnimationsApp.swift in Sources */,
+				BC81ED30292441CA0028C793 /* TickingClock.swift in Sources */,
+				BC81ED28292432DB0028C793 /* Polygon.swift in Sources */,
+				BC74004B292592E300C07C52 /* SkewedLabel.swift in Sources */,
+				BC81ED2C29243DE50028C793 /* ClockTime.swift in Sources */,
+				BCB4BE512926DF7700357497 /* ShrinkingSquares.swift in Sources */,
+				BC7400492925915500C07C52 /* SkewedOffset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BCACEC9528DFA64000A13FC2 /* Debug */ = {
+		BCBC49C228E795E500D7E5A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +265,7 @@
 			};
 			name = Debug;
 		};
-		BCACEC9628DFA64000A13FC2 /* Release */ = {
+		BCBC49C328E795E500D7E5A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,14 +319,14 @@
 			};
 			name = Release;
 		};
-		BCACEC9828DFA64000A13FC2 /* Debug */ = {
+		BCBC49C528E795E500D7E5A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ParticleSystem/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AdvancedAnimations/Preview Content\"";
 				DEVELOPMENT_TEAM = 68467CPVLE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = natashagodwin.ParticleSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = natashagodwin.AdvancedAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,14 +348,14 @@
 			};
 			name = Debug;
 		};
-		BCACEC9928DFA64000A13FC2 /* Release */ = {
+		BCBC49C628E795E500D7E5A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ParticleSystem/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AdvancedAnimations/Preview Content\"";
 				DEVELOPMENT_TEAM = 68467CPVLE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -349,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = natashagodwin.ParticleSystem;
+				PRODUCT_BUNDLE_IDENTIFIER = natashagodwin.AdvancedAnimations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -360,25 +380,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BCACEC8428DFA63C00A13FC2 /* Build configuration list for PBXProject "ParticleSystem" */ = {
+		BCBC49B128E795E300D7E5A5 /* Build configuration list for PBXProject "AdvancedAnimations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCACEC9528DFA64000A13FC2 /* Debug */,
-				BCACEC9628DFA64000A13FC2 /* Release */,
+				BCBC49C228E795E500D7E5A5 /* Debug */,
+				BCBC49C328E795E500D7E5A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCACEC9728DFA64000A13FC2 /* Build configuration list for PBXNativeTarget "ParticleSystem" */ = {
+		BCBC49C428E795E500D7E5A5 /* Build configuration list for PBXNativeTarget "AdvancedAnimations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCACEC9828DFA64000A13FC2 /* Debug */,
-				BCACEC9928DFA64000A13FC2 /* Release */,
+				BCBC49C528E795E500D7E5A5 /* Debug */,
+				BCBC49C628E795E500D7E5A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BCACEC8128DFA63C00A13FC2 /* Project object */;
+	rootObject = BCBC49AE28E795E300D7E5A5 /* Project object */;
 }

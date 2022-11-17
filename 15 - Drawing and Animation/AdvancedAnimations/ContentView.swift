@@ -9,8 +9,15 @@ import SwiftUI
 
 
 struct ContentView: View {
+	@State private var date = Date()
 	var body: some View {
-		PolygonAnimation()
+		TimelineView(.periodic(from: date, by: 1)) { context in
+			Circle()
+				.fill(Color.blue)
+				.padding()
+				.offset(x: -0.0, y: -150.0)
+				.frame(width: 100.0, height: 100.0)
+		}
 	}
 }
 
