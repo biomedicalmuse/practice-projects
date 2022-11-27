@@ -14,6 +14,7 @@ enum Difficulty: CaseIterable {
 	case hard
 	case taxing
 	case nightmare
+
 }
 
 class Board: ObservableObject {

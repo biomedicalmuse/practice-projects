@@ -14,7 +14,6 @@ struct ContentView: View {
 		NavigationStack {
 			VStack {
 				Spacer()
-				
 				Grid(horizontalSpacing: 2, verticalSpacing: 2) {
 					ForEach(0..<board.exampleCells.count, id: \.self) { row in
 						GridRow {
